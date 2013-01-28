@@ -1,14 +1,14 @@
-libre-ipsum
-===========
-
+Libre-Ipsum
+-------------
 libre-ipsum provides you with placeholder text for your web projects and mockups from the annals of western
 literature. Your clients will be simultaneously shamed by your superb taste, and in awe of the endless depth of your 
 knowledge of esoteric literary miscellany.  
 
-* * *
 
-#Usage
+Usage
+-------
 Simply use your favorite (asyn)chronous HTTP request method to call the following URL:
+
 ````
 http://[:url]/api/v1/book
 ````
@@ -32,7 +32,7 @@ This call will provide you with a JSON object containing all our books.
 
 Note: All requests are GET requests.
 
-* * *
 
-#License
+License
+---------
 MIT
