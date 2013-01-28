@@ -1,0 +1,6 @@
+.git
+.DS_STORE
+books
+books/*
+manifest.txt
+test/*
