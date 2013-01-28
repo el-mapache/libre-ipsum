@@ -2,7 +2,7 @@ libre-ipsum
 ===========
 
 libre-ipsum provides you with placeholder text for your web projects and mockups from the annals of western
-literature. Your clients will be shamed by your superb taste, and awed by the endless depth of your 
+literature. Your clients will be simultaneously shamed by your superb taste, and in awe of the endless depth of your 
 knowledge of esoteric literary miscellany.  
 
 * * *
