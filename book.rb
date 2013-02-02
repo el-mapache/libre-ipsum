@@ -6,7 +6,7 @@ class Book
   attr_accessor :book, :file, :paragraphs
   attr_writer :lines
 
-  def initialize lines = 6, paragraphs = nil, book = nil, file = nil
+  def initialize(lines = 6, paragraphs = nil, book = nil, file = nil)
     @lines = lines
     @paragraphs = paragraphs 
     @book

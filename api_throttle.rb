@@ -12,6 +12,9 @@ class ApiThrottle
   def call(env, options={})
     ip_addr = Rack::Request.new(env).ip
     return bad_request unless ip_addr
+    
+    status, headers, response = @app.call(env)
+
     if env['PATH_INFO'].match(/api/)
       begin
         redis = Redis.new({db: 1})
@@ -20,13 +23,12 @@ class ApiThrottle
         redis.expire(key,3600) unless redis.ttl(key) < 3600 && redis.ttl(key) != -1
         redis.incr(key)
         return over_rate_limit if redis[key].to_i > @options[:requests_per_hour]
-      rescue Errno::ECONNREFUSED
-        # If Redis-server is not running, instead of throwing an error, we simply do not throttle the API
-        # It's better if your service is up and running but not throttling API, then to have it throw errors for all users
-        # Make sure you monitor your redis-server so that it's never down. monit is a great tool for that.
+      rescue Errno::ECONNREFUSED => e
+        puts e
       end
+      headers['X-Rate-Limit'] = redis[key]
     end
-    @app.call(env)
+    [status, headers, response]
   end
   
   def bad_request

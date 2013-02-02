@@ -9,12 +9,12 @@ class GutenbergReader
   def initialize
     @existing_books = Dir.entries("books").reject { |b| b[0] == "." }
     @books = []
-    @rss_file = "http://www.gutenberg.org/feeds/today.rss"
+    @rss_link = "http://www.gutenberg.org/feeds/today.rss"
     @epub_link = "http://gutenberg.readingroo.ms/"
   end
   
   def get_latest_rss
-    @rss_file = download("gutenberg.rss",'w+', @rss_file)
+    @rss_file = download("gutenberg.rss",'w+', @rss_link)
   end
   
   def get_book_info
@@ -25,7 +25,7 @@ class GutenbergReader
     end
   end
   
-  def from_directory dir
+  def from_directory(dir)
     files = Dir.open(dir).reject { |b| b[0] == "." }
     books = files.map do |file|
       { id: file.split('.')[0] }
@@ -38,7 +38,7 @@ class GutenbergReader
       filename = "#{book_id}.txt"
       next if @existing_books.find { |b| /^#{book_id}.txt"/ =~ b }
       link = build_link(@epub_link, id_to_fragment(book_id), book_id, filename)
-      book if download(filename, "w+", link) != false
+      book if download("books/"+filename, "w+", link) != false
     end
     
     save_record(downloaded.compact) 
@@ -66,7 +66,7 @@ class GutenbergReader
 
   private 
 
-  def download filename, mode, remote_resource
+  def download(filename, mode, remote_resource)
     file = File.open(filename,mode)
     begin
       URI.parse(remote_resource).open do |resource|
@@ -82,7 +82,7 @@ class GutenbergReader
     filename
   end
   
-  def build_link *args
+  def build_link(*args)
     args.join('/')
   end
   

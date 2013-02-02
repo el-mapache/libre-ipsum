@@ -20,6 +20,7 @@ class LibreIpsum < Sinatra::Base
   
   # Retrieve a random book, 6 lines
   get "/api/v1/books", provides: :json do
+    p env
     content_type :json
     book = Book.find
     book.by_lines

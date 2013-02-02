@@ -13,16 +13,16 @@
 				</header>
 
 				<h5 id="byline" class='col4 alpha omega sans'>Unique placeholder text for your website, culled from a treasure trove of volumes in the public domain.</h5>
-      <p class='sans'>API aceess: </p>
-      <p>Six lines from a random book: </p>
-      <pre>
-        curl http://localhost:4567/api/v1/books
-      </pre>
-      <p>More granular control can be acheived with the following request: </p>
-      <pre>
-        curl http://localhost:4567/api/v1/books/[:book_id]/[:lines]/[:paragraphs]
-      </pre>
-      <p>[:book_id]</p>
+        <p class='sans'>API aceess: </p>
+        <p>Six lines from a random book: </p>
+        <pre>
+          curl http://localhost:4567/api/v1/books
+        </pre>
+        <p>More granular control can be acheived with the following request: </p>
+        <pre>
+          curl http://localhost:4567/api/v1/books/[:book_id]/[:lines]/[:paragraphs]
+        </pre>
+        <p>[:book_id]</p>
 			</section>
 			
 			<section id='right-side' class='col9 offset1'>
@@ -64,12 +64,14 @@
 
         <div class='col6 offset1 alpha omega grid-spacing'> 
           <a id="copy-to" href="#" style="position:relative">copy</a>
-          <br/>
-          <b><p class='col5' id='book-title'></p></b>
-          <p class='col4 offset1' id='book-author'></p>
+          <div id='book-information' class='col6 container'>
+            <b><p class='col5' id='book-title'></p></b>
+            <p class='col4 offset1' id='book-author'></p>
+          </div>
           <div class='clearfix'></div>
-          <blockquote class='clearfix'></blockquote>
+          <blockquote></blockquote>
         </div>
+        
       </div>
       <div class='row'></div>
 	</section>
@@ -77,92 +79,92 @@
   <div class="clearfix"></div>		
 
 	<footer>
-		<div class='container'>
-			<p>
-				<span>Libre Ipsum's</span> library of freely distributable material is made possible by <a class='link' href="http://www.gutenberg.org/">Project Gutenberg</a>.
+	  <div class='container'>
+		  <p>
+				<span>Libre Ipsum's</span> library of freely distributable material is taken from <a class='link' href="http://www.gutenberg.org/">Project Gutenberg</a>.
 			</p>
 			<small>made in Mexico City and San Francisco by <span>adam and rebekah</span>.</small>
 		</div>
-   </footer>
-   <script src="/javascripts/jquery.js"></script>
-   <script src="/javascripts/jquery-zclip-min.js"></script>
-   <script src="/javascripts/chosen.jquery.min.js"></script>
+  </footer>
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/jquery-zclip-min.js"></script>
+  <script src="/javascripts/chosen.jquery.min.js"></script>
+  <script src="/javascripts/book_form.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#copy-to').on('click',function(evt) {
+        evt.preventDefault();
+      });
 
-<script>
-$(document).ready(function() {
-  $('#copy-to').on('click',function(evt) {
-    evt.preventDefault();
-  });
-
-  $('#copy-to').zclip({
-    path:'/javascripts/ZeroClipboard.swf',
-    copy: function() { 
-      return $(this).siblings('blockquote').text();
-    },
-    afterCopy: function() {
-      this.innerHTML = "copied";
-    }
-  });
+      $('#copy-to').zclip({
+        path:'/javascripts/ZeroClipboard.swf',
+        copy: function() { 
+          return $(this).siblings('blockquote').text();
+        },
+        afterCopy: function() {
+          this.innerHTML = "copied";
+        }
+      });
   
-  var book_id = 0,
-      em = /\"?\_(\S(.*?\S)?)\_\"?/gm,
-      parseNewLines = function(markdown) {
-        return markdown.replace(/\r\n\n/g,"<br/><br/>");
-      },
-      parseEmphasis = function(markdown) {
-        return markdown.replace(em, "<em>$1</em>");
-      },
-      $select = $('select'),
-      $paragraphs = $('#paragraphs');
+      var book_id = 0,
+          em = /\"?\_(\S(.*?\S)?)\_\"?/gm,
+          parseNewLines = function(markdown) {
+            return markdown.replace(/\r\n\n/g,"<br/><br/>");
+          },
+          parseEmphasis = function(markdown) {
+            return markdown.replace(em, "<em>$1</em>");
+          },
+          $select = $('select'),
+          $paragraphs = $('#paragraphs');
   
-  $paragraphs.on('blur', function() {
-    if(!this.value.match(/[0-9]/)) {
-      $('#paragraph-count').text(1);
-      this.value = "";
-    } else {
-      $('#paragraph-count').text(this.value);
-    }
-  });
+      $paragraphs.on('blur', function() {
+        if(!this.value.match(/[0-9]/)) {
+          $('#paragraph-count').text(1);
+          this.value = "";
+        } else {
+          $('#paragraph-count').text(this.value);
+        }
+      });
  
-  $('#lines').on('blur', function() {
-    if(!this.value.match(/[0-9]/)) {
-      $('#line-count').text(6);
-      this.value = "";
-    } else {
-      $('#line-count').text(this.value);
-    }
-  });
+      $('#lines').on('blur', function() {
+        if(!this.value.match(/[0-9]/)) {
+          $('#line-count').text(6);
+          this.value = "";
+        } else {
+          $('#line-count').text(this.value);
+        }
+      });
   
-  $select.chosen();
-  $select.chosen().change(function(evt,chosen) {
-    book_id = chosen.selected;
-  });
+      $select.chosen();
+      $select.chosen().change(function(evt,chosen) {
+        book_id = chosen.selected;
+      });
 
-  $('#submit').on('click',function(e) {
-    e.preventDefault();
-    var paragraphs = $paragraphs.val().match(/[0-9]/) ? $paragraphs.val() : 0,
-        lines = $('#lines').val().match(/[0-9]/) ? $('#lines').val() : 0;
+      $('#submit').on('click',function(e) {
+        e.preventDefault();
+        var paragraphs = $paragraphs.val().match(/[0-9]/) ? $paragraphs.val() : 0,
+            lines = $('#lines').val().match(/[0-9]/) ? $('#lines').val() : 0;
 
-    $.ajax({
-      url: "api/v1/books/"+book_id+"/"+lines+"/"+paragraphs,
-      method: "GET",
-      contentType: "JSON",
-      dataType: "JSON",
-      success: function(res) {
-        $('blockquote').html(parseNewLines(parseEmphasis(res.text))).addClass('active');
-        document.getElementById('copy-to').innerHTML = "copy";
-        $("#book-title").text(res.title);
-        $("#book-author").empty();
-        $("#book-author").append('<span>by </span>');
-        $("#book-author").append(res.author);
-      },
-      error: function(res) {
-        console.log('error!')
-        console.log(res)
-      }
-    });
-  });
- });
+        $.ajax({
+          url: "api/v1/books/"+book_id+"/"+lines+"/"+paragraphs,
+          method: "GET",
+          contentType: "JSON",
+          dataType: "JSON",
+          success: function(res) {
+            $('blockquote').html(parseNewLines(parseEmphasis(res.text))).addClass('active');
+            document.getElementById('copy-to').innerHTML = "copy";
+            $("#book-title").text(res.title);
+            $("#book-author").empty();
+            $("#book-author").append('<span>by </span>');
+            $("#book-author").append(res.author);
+          },
+          error: function(res) {
+            console.log('error!')
+            console.log(res)
+          }
+        });
+      });
+     });
 </script>
 </body>
 </html>
