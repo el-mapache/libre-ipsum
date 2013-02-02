@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href= '/stylesheets/styles.css'/>
-    <link rel="stylesheet" href= '/stylesheets/fonts/fonts.css'/>
-    <link rel="stylesheet" href='/stylesheets/chosen.css'/>
- 	</head>
-  <body>
-		<div id='ipsum-container'>
-      <section id="left-side" class='col4 alpha omega'>
-				<header id="marquee" class='col4 alpha omega'>
-					<h1 class='bold-serif'>LIBRE IPSUM</h1>
-				</header>
+<head>
+  <title>Placeholder text form the canon of western literature</title>
+  <link rel="stylesheet" href= '/stylesheets/styles.css'/>
+  <link rel="stylesheet" href= '/stylesheets/fonts/fonts.css'/>
+  <link rel="stylesheet" href='/stylesheets/chosen.css'/>
+</head>
+<body>
+  <div id='ipsum-container'>
+    <section id="left-side" class='col4 alpha omega'>
+      <header id="marquee" class='col4 alpha omega'>
+        <h1 class='bold-serif'>LIBRE IPSUM</h1>
+      </header>
 
-				<h5 id="byline" class='col4 alpha omega sans'>Unique placeholder text for your website, culled from a treasure trove of volumes in the public domain.</h5>
-        <p class='sans'>API aceess: </p>
-        <p>Six lines from a random book: </p>
-        <pre>
-          curl http://localhost:4567/api/v1/books
-        </pre>
-        <p>More granular control can be acheived with the following request: </p>
-        <pre>
-          curl http://localhost:4567/api/v1/books/[:book_id]/[:lines]/[:paragraphs]
-        </pre>
-        <p>[:book_id]</p>
-			</section>
-			
-			<section id='right-side' class='col9 offset1'>
-				<div id="information" class='col9 alpha'>
-					<h1 id="salutation" class='thin-serif alpha grid-spacing col1'>welcome</h1>
-					<p class='sans col6'>
-						By default we'll fetch you a paragraph from a random book in our archives. 
-						For now, all of our books are in English. Below, you can alter the number of paragraphs
-						or lines as needed.
-					</p>
-          <div class='clearfix'></div>
-          <select class="col4">
-            <option value=0>Random book</option>
-            <% books.each do |book| %>	
-              <% book = JSON.parse(book) %>
-              <%= book %>
-              <option value="<%= book["id"]%>"><%= book["title"]%> &#45; <%= book["author"] %></option>
-            <%end%>    
-          </select>
-        </div>
-				
-        <div class='col3 alpha'>
-					<form id='form' class='omega'>
-						<div class='box-input-group'>
-							<input name='line' type='text' id='lines' class='xlarge' placeholder="how many lines?"/>
-						</div>
-
-						<div class='box-input-group col2 alpha omega'>
-							<input name='paragraphs' type='text' id='paragraphs' class='xlarge' placeholder="how many pargraphs?"/>
-						</div>
-						
-            <a href="#" id="submit" class='btn sans background-transition'>Your Words</a>	
-            <p class='serif'>in</p>
-            <p>
-              [<span id='paragraph-count'>1</span> paragraph(s) of <span id="line-count">6</span> lines]
-            </p> 
-					</form>
-				</div>
-
-        <div class='col6 offset1 alpha omega grid-spacing'> 
-          <a id="copy-to" href="#" style="position:relative">copy</a>
-          <div id='book-information' class='col6 container'>
-            <b><p class='col5' id='book-title'></p></b>
-            <p class='col4 offset1' id='book-author'></p>
-          </div>
-          <div class='clearfix'></div>
-          <blockquote></blockquote>
-        </div>
-        
+      <h5 id="byline" class='col4 alpha omega sans'>Unique placeholder text for your website, culled from a treasure trove of volumes in the public domain.</h5>
+      <p class='sans'>API aceess: </p>
+      <p>Six lines from a random book: </p>
+      <pre>
+        curl http://localhost:4567/api/v1/books
+      </pre>
+      <p>More granular control can be acheived with the following request: </p>
+      <pre>
+        curl http://localhost:4567/api/v1/books/[:book_id]/[:lines]/[:paragraphs]
+      </pre>
+      <p>[:book_id]</p>
+    </section>
+    
+    <section id='right-side' class='col9 offset1'>
+      <div id="information" class='col9 alpha'>
+        <h1 id="salutation" class='thin-serif alpha grid-spacing col1'>welcome</h1>
+        <p class='sans col6'>
+          By default we'll fetch you a paragraph from a random book in our archives. 
+          For now, all of our books are in English. Below, you can alter the number of paragraphs
+          or lines as needed.
+        </p>
+        <div class='clearfix'></div>
+        <select class="col4">
+          <option value=0>Random book</option>
+          <% books.each do |book| %>	
+            <% book = JSON.parse(book) %>
+            <%= book %>
+            <option value="<%= book["id"]%>"><%= book["title"]%> &#45; <%= book["author"] %></option>
+          <%end%>    
+        </select>
       </div>
-      <div class='row'></div>
+      
+      <div class='col3 alpha'>
+        <form id='form' class='omega'>
+          <div class='box-input-group'>
+            <input name='line' type='text' id='lines' class='xlarge' placeholder="how many lines?"/>
+          </div>
+
+          <div class='box-input-group col2 alpha omega'>
+            <input name='paragraphs' type='text' id='paragraphs' class='xlarge' placeholder="how many pargraphs?"/>
+          </div>
+          
+          <a href="#" id="submit" class='btn sans background-transition'>Your Words</a>	
+          <p class='serif'>in</p>
+          <p>
+            [<span id='paragraph-count'>1</span> paragraph(s) of <span id="line-count">6</span> lines]
+          </p> 
+        </form>
+      </div>
+
+      <div class='col6 offset1 alpha omega grid-spacing'> 
+        <a id="copy-to" href="#" style="position:relative">copy</a>
+        <div id='book-information' class='col6 container'>
+          <b><p class='col5' id='book-title'></p></b>
+          <p class='col4 offset1' id='book-author'></p>
+        </div>
+        <div class='clearfix'></div>
+        <blockquote></blockquote>
+      </div>
+      
+    </div>
+    <div class='row'></div>
 	</section>
   
   <div class="clearfix"></div>		
