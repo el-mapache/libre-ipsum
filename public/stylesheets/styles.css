@@ -101,10 +101,12 @@ footer span {
 
 .clearfix:after { clear: both; }
 
+.hide { display: none; }
+
 /* TYPOGRAPHY */
 .bold-serif {
-  font: bold 59px/63px Georgia, serif;
-  font: 59px/63px "museo_700regular";
+  font: bold Georgia, serif;
+  font-family: "museo_700regular";
 }
 
 .thin-serif {
@@ -122,6 +124,14 @@ footer span {
                "Arial Narrow", "ArialNarrow", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  font-size: 59px;
+  line-height: 63px;
+}
+
+h3 {
+  font-size: 31px;
+}
 h1,h2,h3,h4,h5,h6 { }
 a, a:visited, a:hover, a:active { color: #222; }
 
@@ -201,6 +211,34 @@ input.large { width: 153px }
 
 input.xlarge { width: 204px; }
 /* SPECIFIC STYLES */
+
+header {
+  border-bottom: 4px solid #eeeee6;
+  width: 100%;
+  /*margin-bottom:20px;*/
+}
+
+#badge {
+  background: #FFCA51;
+  height: 40px;
+  /*border-left: 1px solid #EBAE2E;
+  border-right: 1px solid #EBAE2E;*/
+}
+
+#badge h3 {
+  text-align: center;
+  text-shadow: -3px 3px 4px rgba(192, 154, 86, 0.75);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
 #submit {
   margin-top: 15px;
   color: #EEEEE6;
@@ -234,21 +272,6 @@ input.xlarge { width: 204px; }
   border-bottom: 2px solid #9e9e9e;
   padding-bottom: 20px;
   font-size: 17px;
-}
-
-#marquee {
-  margin-top: 60px;
-  background: #FFCA51;
-  height: 260px;
-  border: 1px solid #EBAE2E;
-}
-
-#marquee h1 {
-  position: absolute;
-  text-shadow: -3px 3px 4px rgba(192, 154, 86, 0.75);
-  color: white;
-  bottom: 0;
-  left: 38%;
 }
 
 #byline {
