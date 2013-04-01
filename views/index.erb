@@ -84,13 +84,12 @@
 		  <p>
 				<span>Libre Ipsum's</span> library of freely distributable material is taken from <a class='link' href="http://www.gutenberg.org/">Project Gutenberg</a>.
 			</p>
-			<small>made in Mexico City and San Francisco by <span>adam and rebekah</span>.</small>
+			<small>made in San Francisco by <span>adam</span>.</small>
 		</div>
   </footer>
   <script src="/javascripts/jquery.js"></script>
   <script src="/javascripts/jquery-zclip-min.js"></script>
   <script src="/javascripts/chosen.jquery.min.js"></script>
-  <script src="/javascripts/book_form.js"></script>
   <script>
     $(document).ready(function() {
       $('#copy-to').on('click',function(evt) {
@@ -144,10 +143,17 @@
       $('#submit').on('click',function(e) {
         e.preventDefault();
         var paragraphs = $paragraphs.val().match(/[0-9]/) ? $paragraphs.val() : 0,
-            lines = $('#lines').val().match(/[0-9]/) ? $('#lines').val() : 0;
+            lines = $('#lines').val().match(/[0-9]/) ? $('#lines').val() : 0,
+            url;
+
+        if(paragraphs === 0 && lines === 0 && book_id === 0) {
+          url = "api/v1/book";
+        } else {
+          url = "api/v1/books/"+book_id+"/"+lines+"/"+paragraphs;
+        }
 
         $.ajax({
-          url: "api/v1/books/"+book_id+"/"+lines+"/"+paragraphs,
+          url: url,
           method: "GET",
           contentType: "JSON",
           dataType: "JSON",

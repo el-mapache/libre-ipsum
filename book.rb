@@ -19,15 +19,15 @@ class Book
       book.file = Book.send(:open_book,book.book)
       book
     end
-    
+
     def open_book(book)
       IO.readlines("books/#{book}")
     end
   end
 
   private_class_method :open_book
-  
-  
+
+
   def trim!
     tmp = Tempfile.new("temp")
 
@@ -51,6 +51,8 @@ class Book
   # the attr_writer accessible instance variables to be overwritten with new values
   def update(params)
     params.each do |key,value|
+      return false unless key.instance_of? String
+
       if self.respond_to?(key.to_sym) and value.to_i != 0
         self.instance_variable_set(("@"+key).to_sym, value.to_i)
       end
@@ -58,7 +60,13 @@ class Book
   end
 
   def by_lines
-    current_line = 100 + rand(@file.count - 200)
+    current_line = get_random_lines 
+
+    # We are going to run out of lines while parsing and get an error
+    if current_line + @lines > @file.count
+      current_line = get_random_lines
+    end
+
     text = []
 
     while(text.length < @lines) 
@@ -69,7 +77,7 @@ class Book
         # We've arrived at the last line
         if text.length == @lines - 1  
           # The line doesnt end with terminating punctuation
-          if @file[current_line][-3].match(/[\,\"\:\.\?\!\;\'(...)]/).nil? 
+          if @file[current_line][-3].match(/[\,\"\:\;\'(...)]/).nil? 
             text << @file[current_line].strip << "..."
           # The line does end with terminating punctuation, strip out the white space
           else
@@ -82,29 +90,28 @@ class Book
         end
       end
     end
-    text = text.join("\r\n").strip
-    text.slice(0,1).capitalize << text.slice(1..-1)
+    text
   end
   
   def by_paragraph
     text = []
     counter = 0
     while(counter < @paragraphs)
-      text << by_lines
+      text << by_lines.join("\r\n").strip.bicameralize
       counter = counter + 1
     end
-    text.join("\r\n\n")
+    text 
   end
   
-  def prepare_book_data(text)
+  def prepare_book_data(text,process)
     data = {}
     @file.each do |f|
       data[:title] = clean_data(f) if f.match(/Title:/)  
       data[:author] = clean_data(f) if f.match(/Author:/)
       break if f.match(/START OF THIS PROJECT/)
     end
-
-    data[:text] = text    
+    
+    data[:text] = process.call(text)
     data
   end
 
@@ -123,5 +130,9 @@ class Book
     else
       true
     end
-  end 
+  end   
+
+  def get_random_lines
+    100 + rand(@file.count - 200)
+  end
 end

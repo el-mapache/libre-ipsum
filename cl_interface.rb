@@ -44,7 +44,6 @@ class LibreIpsumCLI
     if File.exists?(dir) && File.directory?(dir) 
       Dir.entries(dir).reject { |b| b[0] == "." }.each do |b|
         @book.book = b
-        p @book.book
         @book.trim! unless BLACKLIST.include?(@book.book)
       end
     else
