@@ -44,6 +44,7 @@ DEPENDENCIES
   rack-test
   redis
   rspec
+  rspec-mocks
   sinatra
   sprockets
   thin

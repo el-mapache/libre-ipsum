@@ -3,6 +3,7 @@ require 'spec_helper'
 describe LibreIpsum do
   
   context "Routes" do
+
     it "returns the the home page on the default route" do
       get '/'
       last_response.should be_ok
@@ -10,6 +11,7 @@ describe LibreIpsum do
     
     it "gets api/v1/book" do
       get '/api/v1/book'
+      puts last_response.inspect
       last_response.should be_ok
     end
 
@@ -29,16 +31,17 @@ describe LibreIpsum do
 
     describe " #find" do
       before (:each) do
-        @book = Book.find
+        @book = double("book", lines: 6, paragraphs: nil, book: "24.txt")
       end
 
+      describe "functionality" do
       it "returns a book given an id" do
         book = Book.find(24)
         book.should be_an_instance_of Book
       end
 
       it "returns a random book without an id" do
-        @book.should be_an_instance_of Book
+        Book.find.should be_an_instance_of Book
       end
 
       it "sets book attribute to the name of the file it finds" do
@@ -47,25 +50,24 @@ describe LibreIpsum do
       end
 
       it "reads a book into memory as an array" do
+        @book.stub(file: ["a file"])
         @book.file.class.should eq Array
+      end
       end
     end
 
     describe "available public methods" do
-      before (:each) do
-        @book = Book.find
-      end
-
       it "responds to trim!, update, by_lines, and by_paragraph" do
+        book = Book.find
         public_methods = %w(trim! update by_lines by_paragraph)
 
         public_methods.each do |method|
-          @book.respond_to?(method.to_sym).should(eq(true))
+          book.respond_to?(method.to_sym).should(eq(true))
         end
       end
       
       describe " #by_lines" do
-        before(:each) do
+        before(:all) do
           @lines = Book.find.by_lines
         end
 
@@ -99,6 +101,14 @@ describe LibreIpsum do
         it "returns immediately if any key isnt't a string"
         it "does not update params it doesn't respond to"
         it "updates params for which there is a valid attr_accessor"
+      end
+    end
+  end
+
+  context "String extension" do
+    describe String do
+      it "responds to bicameralize" do
+        "".respond_to?(:bicameralize).should be_true
       end
     end
   end

@@ -61,21 +61,16 @@ class Book
 
   def by_lines
     current_line = get_random_lines 
-
-    # We are going to run out of lines while parsing and get an error
-    if current_line + @lines > @file.count
-      current_line = get_random_lines
-    end
-
+    
     text = []
 
-    while(text.length < @lines) 
+    while(text.count < @lines) 
       # This line is blank, increment and keep going
       if !line_acceptable?(@file[current_line]) 
         current_line = current_line + 1
       else
         # We've arrived at the last line
-        if text.length == @lines - 1  
+        if text.count == @lines - 1  
           # The line doesnt end with terminating punctuation
           if @file[current_line][-3].match(/[\,\"\:\;\'(...)]/).nil? 
             text << @file[current_line].strip << "..."
@@ -105,10 +100,10 @@ class Book
   
   def prepare_book_data(text,process)
     data = {}
-    @file.each do |f|
-      data[:title] = clean_data(f) if f.match(/Title:/)  
-      data[:author] = clean_data(f) if f.match(/Author:/)
-      break if f.match(/START OF THIS PROJECT/)
+    @file.each do |line|
+      data[:title] = format_book_info(line) if line.match(/Title:/)  
+      data[:author] = format_book_info(line) if line.match(/Author:/)
+      break if line.match(/START OF THIS PROJECT/)
     end
     
     data[:text] = process.call(text)
@@ -116,11 +111,13 @@ class Book
   end
 
   private
+
   def self.all_books
     Dir.entries("books").reject { |b| b[0] == "." }
   end
-
-  def clean_data(line)
+  
+  # Formats title and author's anme nicely
+  def format_book_info(line)
     line.gsub(/\r\n/,' ').split(":")[-1].strip 
   end
 
@@ -130,9 +127,17 @@ class Book
     else
       true
     end
-  end   
+  end
 
   def get_random_lines
-    100 + rand(@file.count - 200)
+    line = 100 + rand(@file.count - 200)
+    if line + @lines > @file.count
+
+      until(current_line + @lines < @file.count)
+        line = 100 + rand(@file.count - 200)
+      end
+    end
+
+    line
   end
 end
