@@ -10,8 +10,7 @@ describe LibreIpsum do
     end
     
     it "gets api/v1/book" do
-      get '/api/v1/book'
-      puts last_response.inspect
+      get "/api/v1/book"
       last_response.should be_ok
     end
 
@@ -19,13 +18,23 @@ describe LibreIpsum do
       get 'api/v1/books/all'
       last_response.should be_ok
     end
-
   end
 
   context Book do
     describe "#initialize" do
-      it "returns a class for parsing files on new" do
+      it "returns Book class for parsing files" do
         Book.new.should be_an_instance_of Book
+      end
+    end
+
+    describe "accessible attributes" do
+      it "responds to book, file, paragraphs, and lines" do
+        book = Book.find
+        public_methods = %w(book file lines paragraphs)
+
+        public_methods.each do |method|
+          book.respond_to?(method.to_sym).should(eq(true))
+        end
       end
     end
 
@@ -35,24 +44,24 @@ describe LibreIpsum do
       end
 
       describe "functionality" do
-      it "returns a book given an id" do
-        book = Book.find(24)
-        book.should be_an_instance_of Book
-      end
+        it "returns a book given an id" do
+          book = Book.find(24)
+          book.should be_an_instance_of Book
+        end
 
-      it "returns a random book without an id" do
-        Book.find.should be_an_instance_of Book
-      end
+        it "returns a random book without an id" do
+          Book.find.should be_an_instance_of Book
+        end
 
-      it "sets book attribute to the name of the file it finds" do
-        @book.book.should_not be_nil
-        @book.book.class.should eq String
-      end
+        it "sets book attribute to the name of the file it finds" do
+          @book.book.should_not be_nil
+          @book.book.class.should eq String
+        end
 
-      it "reads a book into memory as an array" do
-        @book.stub(file: ["a file"])
-        @book.file.class.should eq Array
-      end
+        it "reads a book into memory as an array" do
+          @book.stub(file: ["a file"])
+          @book.file.class.should eq Array
+        end
       end
     end
 
@@ -97,10 +106,22 @@ describe LibreIpsum do
       end
 
       describe " #update" do
-        it "accepts paramters in the form of a hash"
-        it "returns immediately if any key isnt't a string"
-        it "does not update params it doesn't respond to"
-        it "updates params for which there is a valid attr_accessor"
+        before(:all) do
+          @book = Book.find
+        end
+
+        it "returns false if argument is not a hash" do
+          @book.update(['lines', 10]).should eq false
+        end
+
+        it "returns immediately if any key isnt't a string" do
+          @book.update({:name => "adam"}).should eq false
+        end
+
+        it "updates params for which there is a writtable attribute" do
+          @book.update({"lines" => 10})
+          @book.send(:lines).should eq 10  
+        end
       end
     end
   end

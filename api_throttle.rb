@@ -8,11 +8,11 @@ class ApiThrottle
     @app = app
     @options = {:requests_per_hour => 60}.merge(options)
   end
-  
+
   def call(env, options={})
     ip_addr = Rack::Request.new(env).ip
     return bad_request unless ip_addr
-    
+
     status, headers, response = @app.call(env)
 
     if env['PATH_INFO'].match(/api/)
@@ -24,23 +24,25 @@ class ApiThrottle
         redis.incr(key)
         return over_rate_limit if redis[key].to_i > @options[:requests_per_hour]
       rescue Errno::ECONNREFUSED => e
-        puts e
+        return service_interrupted e
       end
       headers['X-Rate-Limit'] = redis[key]
     end
     [status, headers, response]
   end
-  
+
   def bad_request
     body_text = "Bad Request"
     [ 400, { 'Content-Type' => 'text/plain', 'Content-Length' => body_text.size.to_s }, [body_text] ]
   end
-  
+
   def over_rate_limit
     body_text = "Over Rate Limit"
     [ 503, { 'Content-Type' => 'text/plain', 'Content-Length' => body_text.size.to_s }, [body_text] ]
   end
-  
-  def service_interrupted
+
+  def service_interrupted e
+    body_text = "Technical Difficulties"
+    [ 503, { 'Content-Type' => 'text/plain', 'Content-Length' => body_text.size.to_s }, [body_text] ]
   end
 end

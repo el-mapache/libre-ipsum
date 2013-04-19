@@ -3,8 +3,7 @@ require 'fileutils'
 require 'tempfile'
 
 class Book
-  attr_accessor :book, :file, :paragraphs
-  attr_writer :lines
+  attr_accessor :book, :file, :paragraphs, :lines
 
   def initialize(lines = 6, paragraphs = nil, book = nil, file = nil)
     @lines = lines
@@ -26,8 +25,10 @@ class Book
   end
 
   private_class_method :open_book
-
-
+  
+  # Convienience method to remove all the project gutenberg legalese, 
+  # as well as other ancillary data from a book file and store a 
+  # new versions of it.
   def trim!
     tmp = Tempfile.new("temp")
 
@@ -50,6 +51,8 @@ class Book
   # Rather than a database or persistence update, this method allows for
   # the attr_writer accessible instance variables to be overwritten with new values
   def update(params)
+    return false unless params.kind_of? Hash
+
     params.each do |key,value|
       return false unless key.instance_of? String
 
@@ -98,6 +101,13 @@ class Book
     text 
   end
   
+  # @param text - An array of lines or paragraphs to be processed
+  # @param process - a block that performs the processing on text
+  #
+  # This method scans the file in memory for the author's name and 
+  # the books title, and, if they exist, places them into a hash along
+  # with the processed text to be sent back to the client.
+
   def prepare_book_data(text,process)
     data = {}
     @file.each do |line|
@@ -116,7 +126,7 @@ class Book
     Dir.entries("books").reject { |b| b[0] == "." }
   end
   
-  # Formats title and author's anme nicely
+  # Formats title and author's name nicely
   def format_book_info(line)
     line.gsub(/\r\n/,' ').split(":")[-1].strip 
   end
@@ -128,12 +138,17 @@ class Book
       true
     end
   end
+  
+  # Attempts to pick lines that won't include tables of contents,
+  # legalese, etc.. If the random line plus the number of expected lines
+  # to return is higher than the total number of lines in the book,
+  # try again.
 
   def get_random_lines
     line = 100 + rand(@file.count - 200)
     if line + @lines > @file.count
 
-      until(current_line + @lines < @file.count)
+      until(line + @lines < @file.count)
         line = 100 + rand(@file.count - 200)
       end
     end
