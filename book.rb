@@ -146,13 +146,10 @@ class Book
 
   def get_random_lines
     line = 100 + rand(@file.count - 200)
-    if line + @lines > @file.count
 
-      until(line + @lines < @file.count)
+      while(line + @lines > @file.count)
         line = 100 + rand(@file.count - 200)
       end
-    end
-
     line
   end
 end
