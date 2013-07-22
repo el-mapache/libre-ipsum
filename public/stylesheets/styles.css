@@ -54,10 +54,17 @@ footer span {
   margin-right: 15px;
 }
 
-.grid-spacing { margin-top: 40px; margin-bottom: 20px; }
+.grid-spacing { margin-top: 20px; margin-bottom: 20px; }
 
 .row {}	
-.row:first-child { margin-left: 0px; }
+.row [class*="col"]:first-child { margin-left: 0px; }
+.row [class*="col"] {margin-left: 0px;}
+.row .container {
+  display: table;
+  margin: 0 auto;
+  width: auto;
+}
+
 
 .col1     { width: 54px; }
 .col2     { width: 138px; }
@@ -103,8 +110,8 @@ footer span {
 
 /* TYPOGRAPHY */
 .bold-serif {
-  font: bold 59px/63px Georgia, serif;
-  font: 59px/63px "museo_700regular";
+  font: 46px/44px Georgia, serif;
+  font: 46px/44px "museo_700regular";
 }
 
 .thin-serif {
@@ -113,13 +120,37 @@ footer span {
 }
 
 .serif { 
-  font: 15px/26px Georgia, serif;
-  font: 15px/26px 'museo_300regular', Georgia serif;  
+  font-family: Georgia, serif;
+  font-family: 'museo_300regular', Georgia serif;  
 }
 
 .sans {
   font-family: "museo_sans_300regular", "HelveticaNeue-Light", "Helvetica Neue Light", 
                "Arial Narrow", "ArialNarrow", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;;
+}
+h2 {
+
+  font-size: 30px;
+}
+h3 {
+
+  font-size: 24px;
+}
+h4 {
+
+  font-size: 20px;
+}
+h5 {
+
+  font-size: 18px;
+}
+h6 {
+
+  font-size: 12px;
 }
 
 h1,h2,h3,h4,h5,h6 { }
@@ -134,6 +165,20 @@ a, a:visited, a:hover, a:active { color: #222; }
 
 .link:hover {
   background-color: #eeeee1;
+}
+
+.callout-container {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+.callout-container h1 {
+  display: block;
+  margin: 4px 0 4px 0px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 blockquote {
@@ -211,14 +256,13 @@ input.xlarge { width: 204px; }
 }
 
 #ipsum-container { 
+  margin-top: 60px;
   height: auto;
- /* margin-left: 40px; */
 }
 
 #left-side {
   height: 100%;
-  padding: 0 40px 60px 0;
-  border-right: 2px solid #eeeee6;
+  padding: 0 0px 60px 0;
 }
 
 
@@ -237,18 +281,17 @@ input.xlarge { width: 204px; }
 }
 
 #marquee {
-  margin-top: 60px;
+  margin-top: 20px;
   background: #FFCA51;
-  height: 260px;
-  border: 1px solid #EBAE2E;
+  height: 95px;
+  border: 1px solid rgb(255, 185, 81);
 }
 
-#marquee h1 {
-  position: absolute;
-  text-shadow: -3px 3px 4px rgba(192, 154, 86, 0.75);
-  color: white;
-  bottom: 0;
-  left: 38%;
+#marquee h2 {
+  text-shadow: -4px 3px 1px rgba(192, 154, 86, 0.25);
+  color: #fefefe;
+  margin-top: 15px;
+  text-align: center;
 }
 
 #byline {
@@ -323,7 +366,7 @@ input.xlarge { width: 204px; }
   }
   
   #ipsum-container {
-    margin-left: 20px;
+    margin-top: 60px
   }
    
   #byline {
