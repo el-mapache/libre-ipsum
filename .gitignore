@@ -2,6 +2,7 @@
 .DS_STORE
 books
 books/*
+books.zip
 manifest.txt
 test/*
 gutenberg.rss
