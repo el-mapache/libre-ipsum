@@ -13,13 +13,13 @@ class LibreIpsumCLI
     puts "LibreIpsum CLI"
     command = ''
     pwd = `pwd`.gsub("\n","/")
-    while command != "q"
+    while command != "quit"
       printf "enter command: "
       input = gets.chomp
       parts = input.split
       command = parts[0]
       case command
-        when 'quit' then puts "Exiting....Goodbye!"
+        when 'quit' then return puts "Exiting....Goodbye!"
         when 'update' then update_manifest(pwd + parts[1])
         when 'process-feed' then process_from_feed 
         when 'trim' then trim_book(pwd + parts[1])
@@ -41,9 +41,11 @@ class LibreIpsumCLI
   end
   
   def trim_book dir
+    p dir
     if File.exists?(dir) && File.directory?(dir) 
       Dir.entries(dir).reject { |b| b[0] == "." }.each do |b|
-        @book.book = b
+        p b
+        @book.book = dir+'/'+b
         @book.trim! unless BLACKLIST.include?(@book.book)
       end
     else

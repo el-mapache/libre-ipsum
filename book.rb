@@ -32,7 +32,7 @@ class Book
   def trim!
     tmp = Tempfile.new("temp")
 
-    File.open("books/#{@book}").each_line do |line|
+    File.open("#{@book}").each_line do |line|
       if line.match(/(THE END\.?)/) || line.match(/(Transcriber's Notes\:)/) ||
          line.match(/End of the Project Gutenberg EBook/) || 
          line.match(/^\*\*\*END OF THIS PROJECT GUTENBERG EBOOK/) || line.match(/^(INDEX)/) 
@@ -43,7 +43,7 @@ class Book
     end
     
     tmp.rewind
-    FileUtils.mv(tmp.path,"books/#{@book}")
+    FileUtils.mv(tmp.path,"#{@book}")
     tmp.unlink
     tmp.close
   end
@@ -66,13 +66,15 @@ class Book
     current_line = get_random_lines 
     
     text = []
-
+    
+    # Continue as long as the size of the line array is less than the number of lines
+    # desired
     while(text.count < @lines) 
       # This line is blank, increment and keep going
       if !line_acceptable?(@file[current_line]) 
         current_line = current_line + 1
       else
-        # We've arrived at the last line
+        # If we've arrived at the last line
         if text.count == @lines - 1  
           # The line doesnt end with terminating punctuation
           if @file[current_line][-3].match(/[\,\"\:\;\'(...)]/).nil? 
@@ -130,7 +132,9 @@ class Book
   def format_book_info(line)
     line.gsub(/\r\n/,' ').split(":")[-1].strip 
   end
-
+  
+  # If the line is blank, starts with a space, a new line, or is supposed to be a picture,
+  # it is most definitely not acceptable
   def line_acceptable?(line)
     if line.nil? || line == "" || line == "\r\n" || line.match(/\[Illustration:/)
       false
@@ -143,13 +147,12 @@ class Book
   # legalese, etc.. If the random line plus the number of expected lines
   # to return is higher than the total number of lines in the book,
   # try again.
-
   def get_random_lines
     line = 100 + rand(@file.count - 200)
 
-      while(line + @lines > @file.count)
-        line = 100 + rand(@file.count - 200)
-      end
+    while(line + @lines > @file.count)
+      line = 100 + rand(@file.count - 200)
+    end
     line
   end
 end

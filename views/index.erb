@@ -1,104 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Placeholder text form the canon of western literature</title>
-  <link rel="stylesheet" href= '/stylesheets/styles.css'/>
+  <title>Placeholder text from the canon of western literature</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href= '/stylesheets/bootstrap.min.css'/>
   <link rel="stylesheet" href= '/stylesheets/fonts/fonts.css'/>
   <link rel="stylesheet" href='/stylesheets/chosen.css'/>
+  <link rel="stylesheet" href= '/stylesheets/styles.css'/>
 </head>
 <body>
-  <div class="container" id='ipsum-container'>
-    <div class="col12">
+  <header class="container grid-spacing">
+    <div class="col-lg-6 block-center">
       <div class="row">
-        <div class="container">
-          <div class="col3 callout-container sans">
-            <h1>Placeholder Text</h1>
-          </div>
-          <header id="marquee" class='col2'>
-            <h2 class='serif'>LIBRE IPSUM</h2>
-          </header>
-          <div class="col3 callout-container sans">
-            <h1>From Classic Literature</h1>
-          </div>
+        <div class="col-lg-4 callout-container alpha omega gutter">
+          <h2 class="sans">Placeholder Text</h1>
+        </div>
+        
+        <div id="marquee" class='col-lg-2 alpha omega'>
+          <h3 class='serif'>LIBRE IPSUM</h3>
+        </div>
+        
+        <div class="col-lg-4 callout-container alpha omega">
+          <h2 class="sans">From Classic Literature</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <hr>
+  <div style="min-height: 100%;background: rgba(178, 179, 73, 0.2) url(../images/noise.png);">
+  <div id="ipsum-container">
+    <div class="grid-spacing"> 
+      <div class="col-lg-8 block-center">
+        <p class="serif center">Bring an air of smug literary superiority to your wireframes and  mockups with text from the canon of western literature.</p>
+      </div>
+    </div>
+
+    <div class="container grid-spacing" style="height: 100%">
+      <div class="col-lg-12 sans">
+        <form>
+          <fieldset class="col-lg-6 center block-center">
+            <div>
+              <label class="control-label"><b>Choose a book: </b></label>
+            </div>
+            <select class="col-lg-4">
+              <option value=0>Random</option>
+              <% books.each do |book| %>	
+                <% book = JSON.parse(book) %>
+                <option value="<%= book["id"]%>"><%= book["title"]%> &#45; <%= book["author"] %></option>
+              <%end%>    
+            </select>
+
+            <div class="grid-spacing">
+              <div>
+                <label class="control-label"><b>Number of paragraphs: </b></label>
+              </div>
+              <div class="col-lg-2 block-center" style="float: none;">
+                <input name='paragraphs' type='text' id='paragraphs' class='input-small form-control' placeholder="e.g. 6" value="1"/>
+                <span>max. 8</span>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" id="submit" class='btn btn-large sans background-transition'>Your Words</a>	
+          </fieldset>
+        </form>
+        <div class="clearfix"></div>
+        <div class='grid-spacing'> 
+          <a id="copy-to" href="#" style="position:relative; display:none">copy</a>
+          <div class='clearfix'></div>
+          <blockquote class="active">
+            <div id='book-information' class='container'>
+              <b><p id='book-title'></p></b>
+              <p id='book-author'></p>
+            </div>
+            <p id="book-content" class="col-lg-12">Your text will display here.</p>
+            <div class="clearfix"></div>
+          </blockquote>
         </div>
       </div>
     </div>
   </div>
-<!--
-  <h5 id="byline" class='col4 alpha omega sans'>Unique placeholder text for your website, culled from a treasure trove of volumes in the public domain.</h5>
-      <p class='sans'>API aceess: </p>
-      <p>Six lines from a random book: </p>
-      <pre>
-        curl http://localhost:4567/api/v1/books
-      </pre>
-      <p>More granular control can be acheived with the following request: </p>
-      <pre>
-        curl http://localhost:4567/api/v1/books/[:book_id]/[:lines]/[:paragraphs]
-      </pre>
-      <p>[:book_id]</p>
-    </section>
-    
-    <section id='right-side' class='col9 offset1'>
-      <div id="information" class='col9 alpha'>
-        <h1 id="salutation" class='thin-serif alpha grid-spacing col1'>welcome</h1>
-        <p class='sans col6'>
-          By default we'll fetch you a paragraph from a random book in our archives. 
-          For now, all of our books are in English. Below, you can alter the number of paragraphs
-          or lines as needed.
-        </p>
-        <div class='clearfix'></div>
-        <select class="col4">
-          <option value=0>Random book</option>
-          <% books.each do |book| %>	
-            <% book = JSON.parse(book) %>
-            <%= book %>
-            <option value="<%= book["id"]%>"><%= book["title"]%> &#45; <%= book["author"] %></option>
-          <%end%>    
-        </select>
-      </div>
-      
-      <div class='col3 alpha'>
-        <form id='form' class='omega'>
-          <div class='box-input-group'>
-            <input name='line' type='text' id='lines' class='xlarge' placeholder="how many lines?"/>
-          </div>
-
-          <div class='box-input-group col2 alpha omega'>
-            <input name='paragraphs' type='text' id='paragraphs' class='xlarge' placeholder="how many pargraphs?"/>
-          </div>
-          
-          <a href="#" id="submit" class='btn sans background-transition'>Your Words</a>	
-          <p class='serif'>in</p>
-          <p>
-            [<span id='paragraph-count'>1</span> paragraph(s) of <span id="line-count">6</span> lines]
-          </p> 
-        </form>
-      </div>
-
-      <div class='col6 offset1 alpha omega grid-spacing'> 
-        <a id="copy-to" href="#" style="position:relative">copy</a>
-        <div id='book-information' class='col6 container'>
-          <b><p class='col5' id='book-title'></p></b>
-          <p class='col4 offset1' id='book-author'></p>
-        </div>
-        <div class='clearfix'></div>
-        <blockquote></blockquote>
-      </div>
-      
+</div>
+  <footer>
+    <div class='container'>
+      <p>
+        <span>Libre Ipsum's</span> library of freely distributable material is taken from <a class='link' href="http://www.gutenberg.org/">Project Gutenberg</a>.
+      </p>
+      <small>made in San Francisco by <span>adam</span>.</small>
     </div>
-    <div class='row'></div>
-	</section>
-  
-  <div class="clearfix"></div>		
-
-	<footer>
-	  <div class='container'>
-		  <p>
-				<span>Libre Ipsum's</span> library of freely distributable material is taken from <a class='link' href="http://www.gutenberg.org/">Project Gutenberg</a>.
-			</p>
-			<small>made in San Francisco by <span>adam</span>.</small>
-		</div>
-  </footer>-->
+  </footer>
   <script src="/javascripts/jquery.js"></script>
   <script src="/javascripts/jquery-zclip-min.js"></script>
   <script src="/javascripts/chosen.jquery.min.js"></script>
@@ -138,15 +128,6 @@
         }
       });
  
-      $('#lines').on('blur', function() {
-        if(!this.value.match(/[0-9]/)) {
-          $('#line-count').text(6);
-          this.value = "";
-        } else {
-          $('#line-count').text(this.value);
-        }
-      });
-  
       $select.chosen();
       $select.chosen().change(function(evt,chosen) {
         book_id = chosen.selected;
@@ -155,14 +136,11 @@
       $('#submit').on('click',function(e) {
         e.preventDefault();
         var paragraphs = $paragraphs.val().match(/[0-9]/) ? $paragraphs.val() : 0,
-            lines = $('#lines').val().match(/[0-9]/) ? $('#lines').val() : 0,
+            lines = 8,
             url;
-
-        if(paragraphs === 0 && lines === 0 && book_id === 0) {
-          url = "api/v1/book";
-        } else {
-          url = "api/v1/books/"+book_id+"/"+lines+"/"+paragraphs;
-        }
+        
+        if(paragraphs > 8) paragraphs = 8;
+        url = "api/v1/books/"+book_id+"/"+lines+"/"+paragraphs;
 
         $.ajax({
           url: url,
@@ -170,7 +148,8 @@
           contentType: "JSON",
           dataType: "JSON",
           success: function(res) {
-            $('blockquote').html(parseNewLines(parseEmphasis(res.text))).addClass('active');
+            $('blockquote').addClass("active");
+            $('#book-content').html(parseNewLines(parseEmphasis(res.text)));
             document.getElementById('copy-to').innerHTML = "copy";
             $("#book-title").text(res.title);
             $("#book-author").empty();
