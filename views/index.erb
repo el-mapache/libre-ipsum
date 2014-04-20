@@ -9,17 +9,18 @@
   <link rel="stylesheet" href= '/stylesheets/styles.css'/>
 </head>
 <body>
+
   <header class="container grid-spacing">
     <div class="col-lg-6 block-center">
       <div class="row">
         <div class="col-lg-4 callout-container alpha omega gutter">
           <h2 class="sans">Placeholder Text</h1>
         </div>
-        
+
         <div id="marquee" class='col-lg-2 alpha omega'>
           <h3 class='serif'>LIBRE IPSUM</h3>
         </div>
-        
+
         <div class="col-lg-4 callout-container alpha omega">
           <h2 class="sans">From Classic Literature</h1>
         </div>
@@ -27,61 +28,75 @@
     </div>
   </header>
 
-  <hr>
-  <div style="min-height: 100%;background: rgba(178, 179, 73, 0.2) url(../images/noise.png);">
-  <div id="ipsum-container">
-    <div class="grid-spacing"> 
-      <div class="col-lg-8 block-center">
-        <p class="serif center">Bring an air of smug literary superiority to your wireframes and  mockups with text from the canon of western literature.</p>
+  <hr/>
+
+  <div style="background: rgba(178, 179, 73, 0.2) url(../images/noise.png);">
+    <div id="ipsum-container" class="container">
+
+      <div class="col-lg-10 block-center">
+        <p class="serif center grid-spacing">Bring an air of smug literary superiority to your wireframes and mockups with text from the canon of western literature.</p>
       </div>
-    </div>
 
-    <div class="container grid-spacing" style="height: 100%">
-      <div class="col-lg-12 sans">
-        <form>
-          <fieldset class="col-lg-6 center block-center">
-            <div>
-              <label class="control-label"><b>Choose a book: </b></label>
-            </div>
-            <select class="col-lg-4">
-              <option value=0>Random</option>
-              <% books.each do |book| %>	
-                <% book = JSON.parse(book) %>
-                <option value="<%= book["id"]%>"><%= book["title"]%> &#45; <%= book["author"] %></option>
-              <%end%>    
-            </select>
-
-            <div class="grid-spacing">
+        <form name="ipsum" class="col-lg-12 sans grid-spacing">
+          <fieldset>
+            <div class="col-lg-4">
               <div>
-                <label class="control-label"><b>Number of paragraphs: </b></label>
+                <div class="black-bg circle pull-left">
+                  <p class="sans yellow center fnt-med">1</p>
+                </div>
+                <label class="control-label"><b class='fnt-lrg'>Choose a book</b></label>
               </div>
-              <div class="col-lg-2 block-center" style="float: none;">
+
+              <select class="col-lg-8">
+                <option value=0>Random</option>
+                <% books.each do |book| %>
+                  <% book = JSON.parse(book) %>
+                  <option value="<%= book["id"]%>"><%= book["title"]%> &#45; <%= book["author"] %></option>
+                <%end%>
+              </select>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="black-bg circle pull-left">
+                <p class="sans yellow center fnt-med">2</p>
+              </div>
+              <label class="control-label"><b class="fnt-lrg">No. paragraphs </b> <span>(max 8)</span><b></b></label>
+              <div class="col-lg-3 alpha" style="float: none;">
                 <input name='paragraphs' type='text' id='paragraphs' class='input-small form-control' placeholder="e.g. 6" value="1"/>
-                <span>max. 8</span>
               </div>
             </div>
-            <div class="clearfix"></div>
-            <a href="#" id="submit" class='btn btn-large sans background-transition'>Your Words</a>	
+            <div class="col-lg-4">
+              <div class="black-bg circle pull-left">
+                <p class="sans yellow center fnt-med">3</p>
+              </div>
+              <label class="control-label"><b class="fnt-lrg">Generate</b></label>
+              <div>
+                <a href="#" id="submit" class='col-lg-6 btn btn-large sans background-transition'>Get Your Text</a>
+              </div>
+            </div>
           </fieldset>
         </form>
+
         <div class="clearfix"></div>
-        <div class='grid-spacing'> 
-          <a id="copy-to" href="#" style="position:relative; display:none">copy</a>
+
+        <div class='grid-spacing'>
+          <p id="copy-to" class="hide thin-serif" style="position:relative;"><strong>copy to clipboard</strong></p>
           <div class='clearfix'></div>
+
           <blockquote class="active">
             <div id='book-information' class='container'>
               <b><p id='book-title'></p></b>
               <p id='book-author'></p>
             </div>
-            <p id="book-content" class="col-lg-12">Your text will display here.</p>
+            <p id="book-content" class="col-lg-12"><span class="mute">Text will display here.</span></p>
             <div class="clearfix"></div>
           </blockquote>
+
         </div>
       </div>
-    </div>
   </div>
-</div>
-  <footer>
+  <div class="clearfix"></div>
+  <footer class="sans">
     <div class='container'>
       <p>
         <span>Libre Ipsum's</span> library of freely distributable material is taken from <a class='link' href="http://www.gutenberg.org/">Project Gutenberg</a>.
@@ -94,9 +109,6 @@
   <script src="/javascripts/chosen.jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('#copy-to').on('click',function(evt) {
-        evt.preventDefault();
-      });
 
       $('#copy-to').zclip({
         path:'/javascripts/ZeroClipboard.swf',
@@ -104,7 +116,7 @@
           return $(this).siblings('blockquote').text();
         },
         afterCopy: function() {
-          this.innerHTML = "copied";
+          //this.innerHTML = "copied";
         }
       });
   
@@ -150,7 +162,7 @@
           success: function(res) {
             $('blockquote').addClass("active");
             $('#book-content').html(parseNewLines(parseEmphasis(res.text)));
-            document.getElementById('copy-to').innerHTML = "copy";
+            $('#copy-to').removeClass('hide');
             $("#book-title").text(res.title);
             $("#book-author").empty();
             $("#book-author").append('<span>by </span>');

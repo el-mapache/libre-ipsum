@@ -10,28 +10,26 @@ body {
 }
 
 #ipsum-container {
-  overflow: auto;
-  padding-bottom: 140px;
+  padding-bottom: 60px;
 }
 
 footer {
-  padding-top: 10px;
   border-top: 5px solid #eeeee6;
   background: rgb(54, 54, 54) url(../images/noise.png);
-  color: #FFFF98;/*#8A471C;*/
-  font-family: "museo_300regular";
+  color: #FFFF98;
   text-align: center;
-  height: 165px;
-  margin-top: -165px;
+  padding: 40px 60px 120px 60px;
+  margin-top: -40px;
   clear: both;
   position: relative;
 }
 
-footer span { 
+footer span {
   color: white; 
 }
+
 label { line-height: 30px; }
-.grid-spacing { margin-top: 20px; margin-bottom: 20px; }
+.grid-spacing { margin-top: 40px; margin-bottom: 40px; }
 
 .gutter { margin-left: 30px; }
 
@@ -65,8 +63,20 @@ label { line-height: 30px; }
                "Arial Narrow", "ArialNarrow", Helvetica, Arial, sans-serif;
 }
 
+.fnt-med {
+  font-size: 23px;
+}
+
+.fnt-lrg {
+  font-size: 27px;
+}
+
+input, .chzn-container {
+  margin-top: 10px;
+}
+
 a, a:visited, a:hover, a:active { color: white; }
-hr { border: 1px solid #eeeee6; margin-bottom: 0px}
+hr { border: 3px solid #eeeee6; margin-bottom: 0px}
 .block-center { float: none; margin: 0 auto; }
 .center { text-align: center }
 .link {
@@ -118,11 +128,29 @@ blockquote.active {
 blockquote::selection {
   background: #fabb4d;
 }
+.mute {
+  color:#8e8e8e;
+}
 
+.yellow {
+  color: #FFFF98;
+}
+
+.black-bg {
+  background: rgb(54, 54, 54) url(../images/noise.png);
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
 /* FORM STYLES */
 #submit {
   color: #EEEEE6;
   text-align: center;
+  border: 3px solid;
 }
 
 #marquee {

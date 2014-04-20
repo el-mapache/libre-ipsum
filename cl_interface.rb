@@ -55,3 +55,4 @@ class LibreIpsumCLI
 end
 
 LibreIpsumCLI.new.run
+
