@@ -13,6 +13,7 @@ class GutenbergReader
     @epub_link = "http://gutenberg.readingroo.ms/"
   end
   
+  # Latest rss feed of new books
   def get_latest_rss
     @rss_file = download("gutenberg.rss",'w+', @rss_link)
   end
@@ -44,9 +45,7 @@ class GutenbergReader
     save_record(downloaded.compact) 
   end
   
-  # It seems really inefficient to parse the book file and create a new record only to
-  # test after the fact if its in the manifest or not
-  # Additionally, this loop appears to be looping over each book many more times than it should
+  # This loop appears to be looping over each book many more times than it should
   def save_record(books)
     manifest = File.open("manifest.txt", 'a+')
     existing_books = manifest.each_line.map { |line| line }

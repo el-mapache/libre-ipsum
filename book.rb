@@ -34,8 +34,8 @@ class Book
 
     File.open("#{@book}").each_line do |line|
       if line.match(/(THE END\.?)/) || line.match(/(Transcriber's Notes\:)/) ||
-         line.match(/End of the Project Gutenberg EBook/) || 
-         line.match(/^\*\*\*END OF THIS PROJECT GUTENBERG EBOOK/) || line.match(/^(INDEX)/) 
+         line.match(/End of the Project Gutenberg EBook/) || line.match(/End of Project Gutenberg/) ||
+         line.match(/^\*\*\*END OF THIS PROJECT GUTENBERG EBOOK/)
         break
       else
         tmp << line

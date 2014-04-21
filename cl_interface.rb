@@ -44,9 +44,12 @@ class LibreIpsumCLI
     p dir
     if File.exists?(dir) && File.directory?(dir) 
       Dir.entries(dir).reject { |b| b[0] == "." }.each do |b|
-        p b
         @book.book = dir+'/'+b
-        @book.trim! unless BLACKLIST.include?(@book.book)
+        begin 
+          @book.trim! unless BLACKLIST.include?(@book.book)
+        rescue
+          p b
+        end
       end
     else
       puts "Sorry, that isn't a valid directory."
