@@ -19,7 +19,7 @@ footer {
   color: #FFFF98;
   text-align: center;
   padding: 40px 60px 120px 60px;
-  margin-top: -40px;
+  margin-top: 0px;
   clear: both;
   position: relative;
 }
@@ -29,7 +29,7 @@ footer span {
 }
 
 label { line-height: 30px; }
-.grid-spacing { margin-top: 40px; margin-bottom: 40px; }
+.grid-spacing { margin-top: 30px; margin-bottom: 30px; }
 
 .gutter { margin-left: 30px; }
 
@@ -64,15 +64,15 @@ label { line-height: 30px; }
 }
 
 .fnt-med {
-  font-size: 23px;
-}
-
-.fnt-lrg {
   font-size: 27px;
 }
 
+.fnt-lrg {
+  font-size: 29px;
+}
+
 input, .chzn-container {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 a, a:visited, a:hover, a:active { color: white; }
@@ -97,7 +97,7 @@ hr { border: 3px solid #eeeee6; margin-bottom: 0px}
   border-bottom: 3px solid #4c484a;
 }
 
-.callout-container h2 {
+.callout-container h1 {
   display: block;
   margin: 4px 0 4px 0px;
   border-top: 1px solid #4c484a;
@@ -141,9 +141,9 @@ blockquote::selection {
 }
 
 .circle {
-  height: 30px;
-  width: 30px;
-  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
   margin-right: 10px;
 }
 /* FORM STYLES */
@@ -151,12 +151,12 @@ blockquote::selection {
   color: #EEEEE6;
   text-align: center;
   border: 3px solid;
+  margin-top: 10px;
 }
 
 #marquee {
-  margin: 0px 15px 0 15px;
+  margin: 0px 18px 0 18px;
   background: #fabb4d;
-  height: 90px;
 }
 
 #marquee h3 {
@@ -178,6 +178,12 @@ blockquote::selection {
   display: block;
   padding-bottom: 20px;
 }
+
+.control-label {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
 
 #book-author span {
   color: #8e8e8e;
