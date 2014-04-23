@@ -227,3 +227,6 @@ input:focus { outline: none }
   background: #FFFF98;
   color: #4c484a;
 }
+.inline {
+  display: inline-block;
+}
