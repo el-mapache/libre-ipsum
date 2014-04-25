@@ -86,7 +86,7 @@
         <div class="clearfix"></div>
 
         <div class='grid-spacing'>
-          <p id="copy-to" class="hide thin-serif" style="position:relative;"><strong>copy to clipboard</strong></p>
+          <p id="copy-to" class="hide thin-serif" style="position:relative;"><strong id="inner-copy">copy to clipboard</strong></p>
           <div class='clearfix'></div>
 
           <blockquote class="active">
@@ -116,16 +116,26 @@
   <script>
     $(document).ready(function() {
 
-      $('#copy-to').zclip({
-        path:'/javascripts/ZeroClipboard.swf',
-        copy: function() { 
-          return $(this).siblings('blockquote').text();
-        },
-        afterCopy: function() {
-          //this.innerHTML = "copied";
-        }
-      });
-  
+      function attachZClip(elem) {
+        console.log(elem)
+        elem.zclip({
+          path:'/javascripts/ZeroClipboard.swf',
+          copy: function() { 
+            return $.trim($(this).siblings('blockquote').text());
+          },
+          afterCopy: function() {
+            var $copyTextNode = $(this).find("#inner-copy");
+            var oldCopy = $copyTextNode.text();
+
+            $copyTextNode.text("copied to clipboard!");
+
+            setTimeout(function() {
+              $copyTextNode.text(oldCopy);
+            }, 2000);
+          }
+        });
+      }
+
       var book_id = 0,
           em = /\"?\_(\S(.*?\S)?)\_\"?/gm,
           parseNewLines = function(markdown) {
@@ -168,7 +178,7 @@
           success: function(res) {
             $('blockquote').addClass("active");
             $('#book-content').html(parseNewLines(parseEmphasis(res.text)));
-            $('#copy-to').removeClass('hide');
+            attachZClip($('#copy-to').removeClass('hide').end());
             $("#book-title").text(res.title);
             $("#book-author").empty();
             $("#book-author").append('<span>by </span>');
