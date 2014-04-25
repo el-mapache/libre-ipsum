@@ -178,7 +178,7 @@
           success: function(res) {
             $('blockquote').addClass("active");
             $('#book-content').html(parseNewLines(parseEmphasis(res.text)));
-            attachZClip($('#copy-to').removeClass('hide').end());
+            attachZClip($('#copy-to').removeClass('hide'));
             $("#book-title").text(res.title);
             $("#book-author").empty();
             $("#book-author").append('<span>by </span>');
