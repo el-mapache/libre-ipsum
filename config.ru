@@ -12,11 +12,7 @@ end
 sprockets.append_path 'assets/javascripts'
 sprockets.append_path 'assets/stylesheets'
 
-redis_port_no = unless ENV['APP_ENV'].nil?
-                  22312
-                else
-                  6379
-                end
+redis_port_no = ENV['REDIS_PORT'] || 6379
 
 use ApiThrottle, requests_per_hour: 100, redis_port: redis_port_no
 run LibreIpsum
