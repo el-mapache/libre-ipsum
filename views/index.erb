@@ -121,7 +121,7 @@
         elem.zclip({
           path:'/javascripts/ZeroClipboard.swf',
           copy: function() { 
-            return $.trim($(this).siblings('blockquote').text());
+            return $.trim($(this).siblings('blockquote').find("#book-content").text());
           },
           afterCopy: function() {
             var $copyTextNode = $(this).find("#inner-copy");

@@ -85,7 +85,7 @@ class Book
           end
         # This is just a regular line
         else
-          text << @file[current_line].gsub(/\r/,' ') 
+          text << @file[current_line].gsub(/\r\n/,' ') 
           current_line = current_line + 1 
         end
       end
