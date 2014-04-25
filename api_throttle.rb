@@ -17,7 +17,7 @@ class ApiThrottle
 
     if env['PATH_INFO'].match(/api/)
       begin
-        redis = Redis.new({db: 1, port: @options.redis_port})
+        redis = Redis.new({db: 1, port: @options[:redis_port]})
         key = "#{ip_addr}_#{Time.now.strftime("%Y-%m-%d-%H")}"
         # Set expiry time for a new key
         redis.expire(key,3600) unless redis.ttl(key) < 3600 && redis.ttl(key) != -1
