@@ -5,6 +5,8 @@ require './ext/core_ext'
 require './book.rb'
 
 class LibreIpsum < Sinatra::Base
+  @@books = []
+
   set :root, File.dirname(__FILE__)
   set :static, true
   set :public_folder, "public"
@@ -29,7 +31,7 @@ class LibreIpsum < Sinatra::Base
   # number of lines and/or paragraphs
   get "/api/v1/books/:book_id/:lines/:paragraphs" do
     book = params[:book_id].to_i == 0 ? Book.find : Book.find(params[:book_id])
-    
+
     begin
       book.update(params)
     rescue
@@ -42,10 +44,12 @@ class LibreIpsum < Sinatra::Base
 
   private
   def get_all_books
-    books = []
+    return @@books unless @@books.empty?
+
     File.open("manifest.txt").each_line do |line|
-      books << line
+      @@books << line
     end.close
-    books
+    
+    @@books
   end
 end

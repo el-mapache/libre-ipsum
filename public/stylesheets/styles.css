@@ -3,8 +3,8 @@ html {
   height: 100%;
 }
 
-body {	
-  background: rgb(209,209,209) url(../images/noise.png) repeat;
+body {
+  background: #3E4147;
   color: #4c484a;
   height: 100%;
 }
@@ -13,19 +13,21 @@ body {
   padding-bottom: 60px;
 }
 
+.c-wht {
+  color: white;
+}
+
 footer {
-  border-top: 5px solid #eeeee6;
-  background: rgb(54, 54, 54) url(../images/noise.png);
-  color: #FFFF98;
+  color: #FFF378;
   text-align: center;
-  padding: 40px 60px 120px 60px;
+  padding: 30px 60px 120px 60px;
   margin-top: 0px;
   clear: both;
   position: relative;
 }
 
 footer span {
-  color: white; 
+  color: #e6decd;
 }
 
 label { line-height: 30px; }
@@ -54,13 +56,17 @@ label { line-height: 30px; }
   font: 17px/26px "museo_100regular";
 }
 
-.serif { 
-  font-family: 'museo_300regular', Georgia, serif;  
+.serif {
+  font-family: 'museo_300regular', Georgia, serif;
 }
 
 .sans {
-  font-family: "museo_sans_300regular", "HelveticaNeue-Light", "Helvetica Neue Light", 
+  font-family: "museo_sans_300regular", "HelveticaNeue-Light", "Helvetica Neue Light",
                "Arial Narrow", "ArialNarrow", Helvetica, Arial, sans-serif;
+}
+
+.pacifico {
+  font-family: pacifico, "Lucida Grande";
 }
 
 .fnt-med {
@@ -76,33 +82,31 @@ input, .chzn-container {
 }
 
 a, a:visited, a:hover, a:active { color: white; }
-hr { border: 3px solid #eeeee6; margin-bottom: 0px}
+hr { border: 4px solid #e6decd; margin-bottom: 0px}
 .block-center { float: none; margin: 0 auto; }
 .center { text-align: center }
 .link {
-  padding: 3px 3px 0 3px;
   margin-bottom: 0;
-  border-bottom: 1px solid #8e8e8e;
-  text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 .link:hover {
-  background-color: #fabb4d;
-  color: #4c484a;
+  background-color: #CE3131;
+  text-decoration: none;
 }
 
 .callout-container {
   text-align: center;
-  border-top: 3px solid #4c484a;
-  border-bottom: 3px solid #4c484a;
+  border-top: 3px solid #e6decd;
+  border-bottom: 3px solid #e6decd;
 }
 
 .callout-container h1 {
   display: block;
   margin: 4px 0 4px 0px;
-  border-top: 1px solid #4c484a;
-  border-bottom: 1px solid #4c484a;
-  color: #4c484a;
+  border-top: 1px solid #e6decd;
+  border-bottom: 1px solid #e6decd;
+  color: #e6decd;
 }
 
 blockquote {
@@ -188,6 +192,7 @@ blockquote::selection {
 #book-author span {
   color: #8e8e8e;
 }
+
 input { border-radius: 0 !important; }
 input:focus { outline: none }
 .background-transition {
@@ -229,4 +234,17 @@ input:focus { outline: none }
 }
 .inline {
   display: inline-block;
+}
+
+/*temp gradient*/
+#main-content {
+  background: #ade5ac; /* Old browsers */
+background: -moz-linear-gradient(top,  #ade5ac 0%, #23538a 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ade5ac), color-stop(100%,#23538a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ade5ac 0%,#23538a 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ade5ac 0%,#23538a 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ade5ac 0%,#23538a 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ade5ac 0%,#23538a 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ade5ac', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+
 }

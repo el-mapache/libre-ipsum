@@ -1,4 +1,3 @@
-#!/Users/primer/.rvm/rubies/ruby-1.9.2-p318/bin/ruby
 require 'fileutils'
 require 'tempfile'
 
@@ -7,7 +6,7 @@ class Book
 
   def initialize(lines = 6, paragraphs = nil, book = nil, file = nil)
     @lines = lines
-    @paragraphs = paragraphs 
+    @paragraphs = paragraphs
     @book
   end
 
@@ -15,7 +14,7 @@ class Book
     def find(id = nil)
       book = self.new
       book.book = id.nil? ? all_books.sample : all_books.select { |b| /^#{id}.txt/ =~ b }.first
-      book.file = Book.send(:open_book,book.book)
+      book.file = Book.send(:open_book, book.book)
       book
     end
 
@@ -25,9 +24,9 @@ class Book
   end
 
   private_class_method :open_book
-  
-  # Convienience method to remove all the project gutenberg legalese, 
-  # as well as other ancillary data from a book file and store a 
+
+  # Convienience method to remove all the project gutenberg legalese,
+  # as well as other ancillary data from a book file and store a
   # new versions of it.
   def trim!
     tmp = Tempfile.new("temp")
@@ -41,13 +40,13 @@ class Book
         tmp << line
       end
     end
-    
+
     tmp.rewind
     FileUtils.mv(tmp.path,"#{@book}")
     tmp.unlink
     tmp.close
   end
-  
+
   # Rather than a database or persistence update, this method allows for
   # the attr_writer accessible instance variables to be overwritten with new values
   def update(params)
@@ -63,21 +62,22 @@ class Book
   end
 
   def by_lines
-    current_line = get_random_lines 
-    
+    current_line = get_random_lines
+
     text = []
-    
+
     # Continue as long as the size of the line array is less than the number of lines
     # desired
-    while(text.count < @lines) 
+    while(text.count < @lines)
       # This line is blank, increment and keep going
-      if !line_acceptable?(@file[current_line]) 
+      if !valid_line?(@file[current_line])
         current_line = current_line + 1
       else
         # If we've arrived at the last line
-        if text.count == @lines - 1  
+        if text.count == @lines - 1
           # The line doesnt end with terminating punctuation
-          if @file[current_line][-3].match(/[\,\"\:\;\'(...)]/).nil? 
+          # TODO figure out why this is offset by 3.
+          if @file[current_line][-3].match(/[\"\:\;\'(...)]/).nil?
             text << @file[current_line].strip << "..."
           # The line does end with terminating punctuation, strip out the white space
           else
@@ -85,39 +85,41 @@ class Book
           end
         # This is just a regular line
         else
-          text << @file[current_line].gsub(/\r\n/,' ') 
-          current_line = current_line + 1 
+          text << @file[current_line].gsub(/\r\n/,' ')
+          current_line = current_line + 1
         end
       end
     end
     text
   end
-  
+
   def by_paragraph
     text = []
     counter = 0
+
     while(counter < @paragraphs)
       text << by_lines.join("\r\n").strip.bicameralize
       counter = counter + 1
     end
-    text 
+
+    text
   end
-  
+
   # @param text - An array of lines or paragraphs to be processed
   # @param process - a block that performs the processing on text
   #
-  # This method scans the file in memory for the author's name and 
+  # This method scans the file in memory for the author's name and
   # the books title, and, if they exist, places them into a hash along
   # with the processed text to be sent back to the client.
 
   def prepare_book_data(text,process)
     data = {}
     @file.each do |line|
-      data[:title] = format_book_info(line) if line.match(/Title:/)  
+      data[:title] = format_book_info(line) if line.match(/Title:/)
       data[:author] = format_book_info(line) if line.match(/Author:/)
       break if line.match(/START OF THIS PROJECT/)
     end
-    
+
     data[:text] = process.call(text)
     data
   end
@@ -125,24 +127,24 @@ class Book
   private
 
   def self.all_books
-    Dir.entries("books").reject { |b| b[0] == "." }
+    Dir.entries("books").reject { |book_name| book_name[0] == "." }
   end
-  
+
   # Formats title and author's name nicely
   def format_book_info(line)
-    line.gsub(/\r\n/,' ').split(":")[-1].strip 
+    line.gsub(/\r\n/,' ').split(":")[-1].strip
   end
-  
+
   # If the line is blank, starts with a space, a new line, or is supposed to be a picture,
   # it is most definitely not acceptable
-  def line_acceptable?(line)
+  def valid_line?(line)
     if line.nil? || line == "" || line == "\r\n" || line.match(/\[Illustration:/)
       false
     else
       true
     end
   end
-  
+
   # Attempts to pick lines that won't include tables of contents,
   # legalese, etc.. If the random line plus the number of expected lines
   # to return is higher than the total number of lines in the book,
