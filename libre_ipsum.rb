@@ -11,6 +11,7 @@ class LibreIpsum < Sinatra::Base
   set :static, true
   set :public_folder, "public"
   set :views, File.dirname(__FILE__) + "/views"
+  set :threaded, false
 
   # get a list of all books, in the format of title, author and id
   get "/" do
