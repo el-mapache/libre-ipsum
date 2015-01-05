@@ -37,7 +37,7 @@
   <hr/>
 
   <section id="main-content">
-    <div id="ipsum-container" class="container">
+    <div class="container">
       <form name="ipsum" class="col-lg-12 sans grid-spacing">
         <fieldset class="grid-spacing">
           <div class="col-lg-4">
@@ -107,7 +107,7 @@
         </blockquote>
 
         <div class="container">
-          <span id="copy-to" class="hide serif col-md-2 grid-spacing button radial-wipe">
+          <span id="copy-to" class="hide serif col-md-2 button grid-spacing">
             <p class="block-center">
               <strong id="inner-copy">copy <span class="fa fa-files-o"></span></strong>
             </p>
@@ -136,7 +136,6 @@
       function attachZClip(elem) {
         elem.zclip({
           path:'/javascripts/ZeroClipboard.swf',
-          debug: true,
           copy: function() {
             return $.trim($(this).siblings('blockquote').find("#book-content").text());
           },
@@ -150,6 +149,12 @@
               $copyTextNode.html(oldCopy);
             }, 2000);
           }
+        });
+
+        // TODO: remove jquery and just use zeroclipboard? zclip isnt taking margins into account.
+        $('.zclip').css({
+          'height': elem[0].getBoundingClientRect().height * 2,
+          'top': elem[0].getBoundingClientRect().top +60
         });
       }
 
@@ -184,7 +189,7 @@
             lines = 8,
             url;
 
-        if(paragraphs > 8) paragraphs = 8;
+        if (paragraphs > 8) paragraphs = 8;
         url = "api/v1/books/"+book_id+"/"+lines+"/"+paragraphs;
 
         $.ajax({
@@ -202,7 +207,9 @@
             $('#book-content').html(parseNewLines(parseEmphasis(res.text)));
 
             if (isHidden('#copy-to')) {
-              attachZClip($('#copy-to').removeClass('hide'));
+              var $copy = $('#copy-to');
+              $copy.removeClass('hide')
+              attachZClip($copy);
             }
 
             $("#book-title").text(res.title);

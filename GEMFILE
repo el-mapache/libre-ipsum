@@ -1,10 +1,11 @@
-source :rubygems 
+source 'https://rubygems.org'
 
-gem 'sinatra' 
-gem 'sprockets' 
-gem 'thin' 
+gem 'sinatra'
+gem 'sprockets'
+gem 'thin'
 gem 'nokogiri'
 gem 'redis'
 gem 'rspec'
 gem 'rspec-mocks'
 gem 'rack-test'
+gem 'mina'

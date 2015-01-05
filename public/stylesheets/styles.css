@@ -9,10 +9,6 @@ body {
   height: 100%;
 }
 
-#ipsum-container {
-  padding-bottom: 15px;
-}
-
 .c-wht {
   color: white;
 }
@@ -140,8 +136,7 @@ blockquote > p {
 }
 
 blockquote.active {
-  background: #EEEEE6;
-  margin-bottom: 30px;
+  background: #fffff6;
 }
 
 ::selection {
@@ -180,7 +175,7 @@ blockquote::selection {
   position: relative;
 }
 
-.button:hover {
+.button:hover, .button.hover {
   color: #fff;
   background: rgba(240,240,230,0.6);
   transition: color 0.1s linear;
@@ -188,7 +183,7 @@ blockquote::selection {
   -moz-transition: color 0.1s linear;
 }
 
-.radial-wipe {
+.radial-wipe, #copy-to {
   display: inline-block;
   overflow: hidden;
 }
@@ -221,7 +216,7 @@ blockquote::selection {
   -moz-box-shadow: inset 0px 5px 30px rgba(0,0,0,0.5);
 }
 
-.radial-wipe:hover:after {
+.radial-wipe:hover:after, .hover:after {
   background: #CE3131;
 
   transform: scale3d(1,1,1);
@@ -275,6 +270,7 @@ blockquote::selection {
 
 input {
   border-radius: 0 !important;
+  background: #fffff6 !important;
 }
 
 #paragraphs {
@@ -287,16 +283,25 @@ input {
 .fill { background: #30cbfc; }
 
 .chzn-container .chzn-results .highlighted {
-  background: #FFFF98;
+  background: #fabb4d;
   color: #4c484a;
 }
 
-.chzn-single, .chzn-drop {
+.chzn-container-single .chzn-drop {
+  background-color: #fffff6;
+}
+
+.chzn-container-single .chzn-single {
+  background-color: #fffff6 !important;
   border-radius: 0 !important;
 }
 
 .chzn-drop {
   box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+}
+
+.chzn-search input {
+  width: 100% !important;
 }
 
 .inline {
