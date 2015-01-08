@@ -7,3 +7,4 @@ manifest.txt
 test/*
 gutenberg.rss
 public/javascripts/book_form.js
+config/*
