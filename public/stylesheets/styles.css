@@ -156,14 +156,14 @@ blockquote::selection {
 }
 
 .circle {
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   margin-right: 10px;
 }
 
 .circle p {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .button {
