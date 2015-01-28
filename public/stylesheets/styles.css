@@ -177,7 +177,7 @@ blockquote::selection {
 
 .button:hover, .button.hover {
   color: #fff;
-  background: rgba(240,240,230,0.6);
+  background: rgba(240,240,230,0.0);
   transition: color 0.1s linear;
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
@@ -195,7 +195,7 @@ blockquote::selection {
   left: -50%;
   top: -40%;
   background: transparent;
-  border-radius: 100px 100px;
+  border-radius: 100%;
   position: absolute;
   box-shadow: none;
   -webkit-box-shadow: none;

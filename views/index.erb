@@ -108,7 +108,7 @@
         </blockquote>
 
         <div class="container">
-          <span id="copy-to" class="hide serif col-md-2 button grid-spacing">
+          <span id="copy-to" class="hide serif col-md-2 button grid-spacing radial-wipe">
             <p class="block-center">
               <strong id="inner-copy">copy <span class="fa fa-files-o"></span></strong>
             </p>
@@ -152,10 +152,9 @@
           }
         });
 
-        // TODO: remove jquery and just use zeroclipboard? zclip isnt taking margins into account.
+        // // TODO: remove jquery and just use zeroclipboard? zclip isnt taking margins into account.
         $('.zclip').css({
-          'height': elem[0].getBoundingClientRect().height * 2,
-          'top': elem[0].getBoundingClientRect().top +60
+          'top': +$('.zclip').css('top').replace(/px/, '') + +(elem.css('marginTop').replace(/px/,'') * 3)
         });
       }
 
