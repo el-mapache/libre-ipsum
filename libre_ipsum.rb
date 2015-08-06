@@ -47,10 +47,10 @@ class LibreIpsum < Sinatra::Base
   def get_all_books
     return @@books unless @@books.empty?
 
-    File.open("manifest.txt").each_line do |line|
+    File.open(File.dirname(__FILE__) + "/manifest.txt").each_line do |line|
       @@books << line
     end.close
-    
+
     @@books
   end
 end
