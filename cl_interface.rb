@@ -4,11 +4,12 @@ require "./book.rb"
 
 class LibreIpsumCLI
   BLACKLIST = ["19831.txt"]
+
   def initialize
     @reader = GutenbergReader.new
     @book = Book.new
   end
-  
+
   def run
     puts "LibreIpsum CLI"
     command = ''
@@ -21,31 +22,31 @@ class LibreIpsumCLI
       case command
         when 'quit' then return puts "Exiting....Goodbye!"
         when 'update' then update_manifest(pwd + parts[1])
-        when 'process-feed' then process_from_feed 
+        when 'process-feed' then process_from_feed
         when 'trim' then trim_book(pwd + parts[1])
-        else 
+        else
           puts "Sorry, I dont know how to #{command}."
       end
     end
   end
 
-  private  
+  private
   def process_from_feed
     @reader.get_latest_rss
     @reader.get_book_info
     @reader.process_books
   end
-  
+
   def update_manifest dir
     @reader.save_record(@reader.from_directory(dir))
   end
-  
+
   def trim_book dir
     p dir
-    if File.exists?(dir) && File.directory?(dir) 
+    if File.exists?(dir) && File.directory?(dir)
       Dir.entries(dir).reject { |b| b[0] == "." }.each do |b|
         @book.book = dir+'/'+b
-        begin 
+        begin
           @book.trim! unless BLACKLIST.include?(@book.book)
         rescue
           p b
@@ -58,4 +59,3 @@ class LibreIpsumCLI
 end
 
 LibreIpsumCLI.new.run
-
