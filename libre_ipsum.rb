@@ -21,7 +21,10 @@ class LibreIpsum < Sinatra::Base
   # Retrieve a random book, 6 lines
   get "/api/v1/book" do
     book = Book.find
-    book.prepare_book_data(book.by_lines, lambda { |text| text.join("\r\n").strip.bicameralize}).to_json
+    book.prepare_book_data(
+      book.by_lines,
+      lambda { |text| text.join("\r\n").strip.bicameralize}
+    ).to_json
   end
 
   get "/api/v1/books/all" do

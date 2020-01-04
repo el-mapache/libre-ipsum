@@ -1,0 +1,539 @@
+{"id":"1014","link":"http://www.gutenberg.org/ebooks/1014","title":"The Lure of the Dim Trails","author":"by (AKA B. M. Sinclair) B. M. Bower"}
+{"id":"1020","link":"http://www.gutenberg.org/ebooks/1020","title":"Sword Blades and Poppy Seed","author":"Amy Lowell"}
+{"id":"1052","link":"http://www.gutenberg.org/ebooks/1052","title":"Step by Step","author":"The American Tract Society"}
+{"id":"1056","link":"http://www.gutenberg.org/ebooks/1056","title":"Martin Eden","author":"Jack London"}
+{"id":"10605","link":"http://www.gutenberg.org/ebooks/10605","title":"Adventures In Contentment","author":"David Grayson"}
+{"id":"1080","link":"http://www.gutenberg.org/ebooks/1080","title":"A Modest Proposal","author":"Jonathan Swift"}
+{"id":"1145","link":"http://www.gutenberg.org/ebooks/1145","title":"Rupert of Hentzau","author":"Anthony Hope"}
+{"id":"1151","link":"http://www.gutenberg.org/ebooks/1151","title":"The Nibelungenlied","author":"Unknown"}
+{"id":"1152","link":"http://www.gutenberg.org/ebooks/1152","title":"The Story of the Volsungs, (Volsunga Saga)","author":"Anonymous"}
+{"id":"1164","link":"http://www.gutenberg.org/ebooks/1164","title":"The Iron Heel","author":"Jack London"}
+{"id":"1167","link":"http://www.gutenberg.org/ebooks/1167","title":"A Strange Disappearance","author":"Anna Katharine Green"}
+{"id":"1170","link":"http://www.gutenberg.org/ebooks/1170","title":"Anabasis","author":"Xenophon"}
+{"id":"1171","link":"http://www.gutenberg.org/ebooks/1171","title":"The Apology","author":"Xenophon"}
+{"id":"1172","link":"http://www.gutenberg.org/ebooks/1172","title":"The Cavalry General","author":"Xenophon"}
+{"id":"1173","link":"http://www.gutenberg.org/ebooks/1173","title":"The Economist","author":"Xenophon"}
+{"id":"1174","link":"http://www.gutenberg.org/ebooks/1174","title":"Hellenica","author":"Xenophon"}
+{"id":"1175","link":"http://www.gutenberg.org/ebooks/1175","title":"Hiero","author":"Xenophon"}
+{"id":"1176","link":"http://www.gutenberg.org/ebooks/1176","title":"On Horsemanship","author":"Xenophon"}
+{"id":"1177","link":"http://www.gutenberg.org/ebooks/1177","title":"The Memorabilia","author":"Xenophon"}
+{"id":"1178","link":"http://www.gutenberg.org/ebooks/1178","title":"The Polity of the Athenians and the Lacedaemonians","author":"Xenophon"}
+{"id":"1179","link":"http://www.gutenberg.org/ebooks/1179","title":"On Revenues","author":"Xenophon"}
+{"id":"1180","link":"http://www.gutenberg.org/ebooks/1180","title":"The Sportsman","author":"Xenophon"}
+{"id":"1181","link":"http://www.gutenberg.org/ebooks/1181","title":"The Symposium","author":"Xenophon"}
+{"id":"119","link":"http://www.gutenberg.org/ebooks/119","title":"A Tramp Abroad, Complete","author":"Mark Twain (Samuel Clemens)"}
+{"id":"1203","link":"http://www.gutenberg.org/ebooks/1203","title":"Dolly Dialogues","author":"Anthony Hope"}
+{"id":"1204","link":"http://www.gutenberg.org/ebooks/1204","title":"Cabin Fever","author":"B. M. Bower"}
+{"id":"1206","link":"http://www.gutenberg.org/ebooks/1206","title":"Flying U Ranch","author":"B. M. Bower"}
+{"id":"12843","link":"http://www.gutenberg.org/ebooks/12843","title":"Poems","author":"Ralph Waldo Emerson"}
+{"id":"1298","link":"http://www.gutenberg.org/ebooks/1298","title":"The Virginian","author":"Owen Wister"}
+{"id":"1299","link":"http://www.gutenberg.org/ebooks/1299","title":"The Heritage of the Sioux","author":"B.M. Bower"}
+{"id":"1354","link":"http://www.gutenberg.org/ebooks/1354","title":"Chronicles of Avonlea","author":"Lucy Maud Montgomery"}
+{"id":"1379","link":"http://www.gutenberg.org/ebooks/1379","title":"A Straight Deal","author":"Owen Wister"}
+{"id":"1385","link":"http://www.gutenberg.org/ebooks/1385","title":"Lin McLean","author":"Owen Wister"}
+{"id":"1386","link":"http://www.gutenberg.org/ebooks/1386","title":"Lady Baltimore","author":"Owen Wister"}
+{"id":"1387","link":"http://www.gutenberg.org/ebooks/1387","title":"Mother","author":"Owen Wister"}
+{"id":"1388","link":"http://www.gutenberg.org/ebooks/1388","title":"Padre Ignacio","author":"Owen Wister"}
+{"id":"1390","link":"http://www.gutenberg.org/ebooks/1390","title":"The Jimmyjohn Boss and Other Stories","author":"Owen Wister"}
+{"id":"1399","link":"http://www.gutenberg.org/ebooks/1399","title":"Anna Karenina","author":"Leo Tolstoy"}
+{"id":"1400","link":"http://www.gutenberg.org/ebooks/1400","title":"Great Expectations","author":"Charles Dickens"}
+{"id":"1459","link":"http://www.gutenberg.org/ebooks/1459","title":"Prufrock and Other Observations","author":"T. S. Eliot"}
+{"id":"1497","link":"http://www.gutenberg.org/ebooks/1497","title":"The Republic","author":"Plato"}
+{"id":"1567","link":"http://www.gutenberg.org/ebooks/1567","title":"Poems","author":"T. S. [Thomas Stearns] Eliot"}
+{"id":"1571","link":"http://www.gutenberg.org/ebooks/1571","title":"Critias","author":"Plato"}
+{"id":"1572","link":"http://www.gutenberg.org/ebooks/1572","title":"Timaeus","author":"Plato"}
+{"id":"1579","link":"http://www.gutenberg.org/ebooks/1579","title":"Lysis","author":"Plato"}
+{"id":"1580","link":"http://www.gutenberg.org/ebooks/1580","title":"Charmides","author":"Plato"}
+{"id":"1584","link":"http://www.gutenberg.org/ebooks/1584","title":"Laches","author":"Plato"}
+{"id":"1591","link":"http://www.gutenberg.org/ebooks/1591","title":"Protagoras","author":"Plato"}
+{"id":"1598","link":"http://www.gutenberg.org/ebooks/1598","title":"Euthydemus","author":"Plato"}
+{"id":"1599","link":"http://www.gutenberg.org/ebooks/1599","title":"Cinderella; or, The Little Glass Slipper and Other Stories","author":"Anonymous"}
+{"id":"1600","link":"http://www.gutenberg.org/ebooks/1600","title":"Symposium","author":"Plato"}
+{"id":"1616","link":"http://www.gutenberg.org/ebooks/1616","title":"Cratylus","author":"Plato"}
+{"id":"1635","link":"http://www.gutenberg.org/ebooks/1635","title":"Ion","author":"Plato"}
+{"id":"1636","link":"http://www.gutenberg.org/ebooks/1636","title":"Phaedrus","author":"Plato"}
+{"id":"1642","link":"http://www.gutenberg.org/ebooks/1642","title":"Euthyphro","author":"Plato"}
+{"id":"1643","link":"http://www.gutenberg.org/ebooks/1643","title":"Meno","author":"Plato"}
+{"id":"1644","link":"http://www.gutenberg.org/ebooks/1644","title":"The Adventures of Gerard","author":"Arthur Conan Doyle"}
+{"id":"1656","link":"http://www.gutenberg.org/ebooks/1656","title":"Apology","author":"Plato"}
+{"id":"1658","link":"http://www.gutenberg.org/ebooks/1658","title":"Phaedo","author":"Plato"}
+{"id":"1672","link":"http://www.gutenberg.org/ebooks/1672","title":"Gorgias","author":"Plato"}
+{"id":"1673","link":"http://www.gutenberg.org/ebooks/1673","title":"Lesser Hippias","author":"Plato"}
+{"id":"1676","link":"http://www.gutenberg.org/ebooks/1676","title":"Alcibiades I","author":"(may be spurious) Plato"}
+{"id":"1677","link":"http://www.gutenberg.org/ebooks/1677","title":"Alcibiades II","author":"An Imitator of Plato"}
+{"id":"1681","link":"http://www.gutenberg.org/ebooks/1681","title":"Eryxias","author":"An Imitator of Plato"}
+{"id":"1682","link":"http://www.gutenberg.org/ebooks/1682","title":"Menexenus","author":"Plato"}
+{"id":"1687","link":"http://www.gutenberg.org/ebooks/1687","title":"Parmenides","author":"Plato"}
+{"id":"1692","link":"http://www.gutenberg.org/ebooks/1692","title":"1492","author":"Mary Johnston"}
+{"id":"1723","link":"http://www.gutenberg.org/ebooks/1723","title":"Cow-Country","author":"B. M. Bower"}
+{"id":"1735","link":"http://www.gutenberg.org/ebooks/1735","title":"Sophist","author":"Plato"}
+{"id":"1738","link":"http://www.gutenberg.org/ebooks/1738","title":"Statesman","author":"Plato"}
+{"id":"174","link":"http://www.gutenberg.org/ebooks/174","title":"The Picture of Dorian Gray","author":"Oscar Wilde"}
+{"id":"1740","link":"http://www.gutenberg.org/ebooks/1740","title":"The Flying U's Last Stand","author":"B. M. Bower"}
+{"id":"1744","link":"http://www.gutenberg.org/ebooks/1744","title":"Philebus","author":"Plato"}
+{"id":"1750","link":"http://www.gutenberg.org/ebooks/1750","title":"Laws","author":"Plato"}
+{"id":"1837","link":"http://www.gutenberg.org/ebooks/1837","title":"The Prince and The Pauper, Complete","author":"Mark Twain (Samuel Clemens)"}
+{"id":"18405","link":"http://www.gutenberg.org/ebooks/18405","title":"Great Sea Stories","author":"Various"}
+{"id":"1851","link":"http://www.gutenberg.org/ebooks/1851","title":"The Woman in the Alcove","author":"Anna Katharine Green"}
+{"id":"1858","link":"http://www.gutenberg.org/ebooks/1858","title":"Plain Tales from the Hills","author":"Rudyard Kipling"}
+{"id":"1872","link":"http://www.gutenberg.org/ebooks/1872","title":"The Red House Mystery","author":"A. A. Milne"}
+{"id":"1880","link":"http://www.gutenberg.org/ebooks/1880","title":"The Pathfinder","author":"James Fenimore Cooper"}
+{"id":"18863","link":"http://www.gutenberg.org/ebooks/18863","title":"The Loom of Youth","author":"Alec Waugh"}
+{"id":"1900","link":"http://www.gutenberg.org/ebooks/1900","title":"Typee","author":"Herman Melville"}
+{"id":"1907","link":"http://www.gutenberg.org/ebooks/1907","title":"Rowdy of the Cross L","author":"B.M. Sinclair, AKA B.M. Bower"}
+{"id":"1908","link":"http://www.gutenberg.org/ebooks/1908","title":"Her Prairie Knight","author":"B.M. Sinclair, AKA B. M. Bower"}
+{"id":"1937","link":"http://www.gutenberg.org/ebooks/1937","title":"The Second Jungle Book","author":"Rudyard Kipling"}
+{"id":"1945","link":"http://www.gutenberg.org/ebooks/1945","title":"Egmont","author":"Johann Wolfgang Von Goethe"}
+{"id":"1958","link":"http://www.gutenberg.org/ebooks/1958","title":"Hermann and Dorothea","author":"Johann Wolfgang von Goethe"}
+{"id":"19831","link":"http://www.gutenberg.org/ebooks/19831","title":"The Rise and Fall of the Confederate Government, Vol. 1 (of 2)","author":"Jefferson Davis"}
+{"id":"1988","link":"http://www.gutenberg.org/ebooks/1988","title":"The History of Tom Thumb, and Others","author":"Anonymous"}
+{"id":"20","link":"http://www.gutenberg.org/ebooks/20","title":"Paradise Lost","author":"John Milton"}
+{"id":"2017","link":"http://www.gutenberg.org/ebooks/2017","title":"The Dhammapada","author":"Unknown"}
+{"id":"206","link":"http://www.gutenberg.org/ebooks/206","title":"The Martin Luther King, Jr. Day, 1995, Memorial Issue","author":"Various"}
+{"id":"20795","link":"http://www.gutenberg.org/ebooks/20795","title":"The Cricket on the Hearth","author":"Charles Dickens"}
+{"id":"2131","link":"http://www.gutenberg.org/ebooks/2131","title":"An Account of Egypt","author":"Herodotus"}
+{"id":"21332","link":"http://www.gutenberg.org/ebooks/21332","title":"Charles Dickens as a Reader","author":"Charles Kent"}
+{"id":"215","link":"http://www.gutenberg.org/ebooks/215","title":"The Call of the Wild","author":"Jack London"}
+{"id":"2163","link":"http://www.gutenberg.org/ebooks/2163","title":"The Bridge-Builders","author":"Rudyard Kipling"}
+{"id":"217","link":"http://www.gutenberg.org/ebooks/217","title":"Sons and Lovers","author":"David Herbert Lawrence"}
+{"id":"21769","link":"http://www.gutenberg.org/ebooks/21769","title":"Songs Of The Road","author":"Arthur Conan Doyle"}
+{"id":"21816","link":"http://www.gutenberg.org/ebooks/21816","title":"The Confidence-Man","author":"Herman Melville"}
+{"id":"2197","link":"http://www.gutenberg.org/ebooks/2197","title":"The Gambler","author":"Fyodor Dostoyevsky"}
+{"id":"221","link":"http://www.gutenberg.org/ebooks/221","title":"The Return of Sherlock Holmes","author":"Arthur Conan Doyle"}
+{"id":"2227","link":"http://www.gutenberg.org/ebooks/2227","title":"Soldiers Three, Part II.","author":"Rudyard Kipling"}
+{"id":"22474","link":"http://www.gutenberg.org/ebooks/22474","title":"Some Tales In Verse","author":"Richard Doddridge Blackmore"}
+{"id":"22475","link":"http://www.gutenberg.org/ebooks/22475","title":"Tortoises","author":"D. H. Lawrence"}
+{"id":"22477","link":"http://www.gutenberg.org/ebooks/22477","title":"Wintry Peacock","author":"D. H. Lawrence"}
+{"id":"22480","link":"http://www.gutenberg.org/ebooks/22480","title":"The Prussian Officer","author":"D. H. Lawrence"}
+{"id":"2275","link":"http://www.gutenberg.org/ebooks/2275","title":"The Pioneers","author":"James Fenimore Cooper"}
+{"id":"23007","link":"http://www.gutenberg.org/ebooks/23007","title":"The Village Convict","author":"Heman White Chaplin"}
+{"id":"23008","link":"http://www.gutenberg.org/ebooks/23008","title":"The Sheriff And His Partner","author":"Frank Harris"}
+{"id":"23009","link":"http://www.gutenberg.org/ebooks/23009","title":"A Modern Idyll","author":"Frank Harris"}
+{"id":"23010","link":"http://www.gutenberg.org/ebooks/23010","title":"Gulmore, The Boss","author":"Frank Harris"}
+{"id":"23011","link":"http://www.gutenberg.org/ebooks/23011","title":"Eatin' Crow; and The Best Man In Garotte","author":"Frank Harris"}
+{"id":"23012","link":"http://www.gutenberg.org/ebooks/23012","title":"Elder Conklin","author":"Frank Harris"}
+{"id":"23013","link":"http://www.gutenberg.org/ebooks/23013","title":"\"George Washington's\" Last Duel","author":"Thomas Nelson Page"}
+{"id":"23014","link":"http://www.gutenberg.org/ebooks/23014","title":"\"A Soldier Of The Empire\"","author":"Thomas Nelson Page"}
+{"id":"23015","link":"http://www.gutenberg.org/ebooks/23015","title":"\"Run To Seed\"","author":"Thomas Nelson Page"}
+{"id":"23016","link":"http://www.gutenberg.org/ebooks/23016","title":"P'laski's Tunament","author":"Thomas Nelson Page"}
+{"id":"23017","link":"http://www.gutenberg.org/ebooks/23017","title":"Elsket","author":"Thomas Nelson Page"}
+{"id":"23059","link":"http://www.gutenberg.org/ebooks/23059","title":"My Friend The Murderer","author":"A. Conan Doyle"}
+{"id":"2317","link":"http://www.gutenberg.org/ebooks/2317","title":"The Story of My Heart","author":"Richard Jefferies"}
+{"id":"23247","link":"http://www.gutenberg.org/ebooks/23247","title":"The Cursed Patois","author":"Mary Hartwell Catherwood"}
+{"id":"23248","link":"http://www.gutenberg.org/ebooks/23248","title":"The Black Feather","author":"Mary Hartwell Catherwood"}
+{"id":"23249","link":"http://www.gutenberg.org/ebooks/23249","title":"The Blue Man","author":"Mary Hartwell Catherwood"}
+{"id":"23250","link":"http://www.gutenberg.org/ebooks/23250","title":"The Skeleton On Round Island","author":"Mary Hartwell Catherwood"}
+{"id":"23251","link":"http://www.gutenberg.org/ebooks/23251","title":"Marianson","author":"Mary Hartwell Catherwood"}
+{"id":"23410","link":"http://www.gutenberg.org/ebooks/23410","title":"The Spinster","author":"Robert Hichens"}
+{"id":"23411","link":"http://www.gutenberg.org/ebooks/23411","title":"Smain; and Safti's Summer Day","author":"Robert Hichens"}
+{"id":"23412","link":"http://www.gutenberg.org/ebooks/23412","title":"The Figure In The Mirage","author":"Robert Hichens"}
+{"id":"23413","link":"http://www.gutenberg.org/ebooks/23413","title":"The Princess And The Jewel Doctor","author":"Robert Hichens"}
+{"id":"23414","link":"http://www.gutenberg.org/ebooks/23414","title":"Halima And The Scorpions","author":"Robert Hichens"}
+{"id":"23415","link":"http://www.gutenberg.org/ebooks/23415","title":"The Mission Of Mr. Eustace Greyne","author":"Robert Hichens"}
+{"id":"23416","link":"http://www.gutenberg.org/ebooks/23416","title":"\"Fin Tireur\"","author":"Robert Hichens"}
+{"id":"23417","link":"http://www.gutenberg.org/ebooks/23417","title":"The Desert Drum","author":"Robert Hichens"}
+{"id":"23418","link":"http://www.gutenberg.org/ebooks/23418","title":"Desert Air","author":"Robert Hichens"}
+{"id":"23419","link":"http://www.gutenberg.org/ebooks/23419","title":"The Return Of The Soul","author":"Robert S. Hichens"}
+{"id":"23420","link":"http://www.gutenberg.org/ebooks/23420","title":"The Folly Of Eustace","author":"Robert S. Hichens"}
+{"id":"23421","link":"http://www.gutenberg.org/ebooks/23421","title":"The Collaborators","author":"Robert S. Hichens"}
+{"id":"23510","link":"http://www.gutenberg.org/ebooks/23510","title":"The Sheriffs Bluff","author":"Thomas Nelson Page"}
+{"id":"23511","link":"http://www.gutenberg.org/ebooks/23511","title":"The Christmas Peace","author":"Thomas Nelson Page"}
+{"id":"23512","link":"http://www.gutenberg.org/ebooks/23512","title":"Mam' Lyddy's Recognition","author":"Thomas Nelson Page"}
+{"id":"23513","link":"http://www.gutenberg.org/ebooks/23513","title":"Old Jabe's Marital Experiments","author":"Thomas Nelson Page"}
+{"id":"23514","link":"http://www.gutenberg.org/ebooks/23514","title":"The Long Hillside","author":"Thomas Nelson Page"}
+{"id":"23515","link":"http://www.gutenberg.org/ebooks/23515","title":"The Spectre In The Cart","author":"Thomas Nelson Page"}
+{"id":"23516","link":"http://www.gutenberg.org/ebooks/23516","title":"Bred In The Bone","author":"Thomas Nelson Page"}
+{"id":"236","link":"http://www.gutenberg.org/ebooks/236","title":"The Jungle Book","author":"Rudyard Kipling"}
+{"id":"2381","link":"http://www.gutenberg.org/ebooks/2381","title":"Actions and Reactions","author":"Rudyard Kipling"}
+{"id":"23821","link":"http://www.gutenberg.org/ebooks/23821","title":"Yorke The Adventurer","author":"Louis Becke"}
+{"id":"23946","link":"http://www.gutenberg.org/ebooks/23946","title":"Lalage's Lovers","author":"George A. Birmingham"}
+{"id":"24","link":"http://www.gutenberg.org/ebooks/24","title":"O Pioneers!","author":"Willa Cather"}
+{"id":"24073","link":"http://www.gutenberg.org/ebooks/24073","title":"General John Regan","author":"George A. Birmingham"}
+{"id":"24140","link":"http://www.gutenberg.org/ebooks/24140","title":"The Northern Iron","author":"George A. Birmingham"}
+{"id":"24155","link":"http://www.gutenberg.org/ebooks/24155","title":"Lady Bountiful","author":"George A. Birmingham"}
+{"id":"242","link":"http://www.gutenberg.org/ebooks/242","title":"My Antonia","author":"Willa Cather"}
+{"id":"24393","link":"http://www.gutenberg.org/ebooks/24393","title":"Our Casualty And Other Stories","author":"James Owen Hannay, AKA George A. Birmingham"}
+{"id":"24394","link":"http://www.gutenberg.org/ebooks/24394","title":"Gossamer","author":"George A. Birmingham"}
+{"id":"244","link":"http://www.gutenberg.org/ebooks/244","title":"A Study In Scarlet","author":"Arthur Conan Doyle"}
+{"id":"24420","link":"http://www.gutenberg.org/ebooks/24420","title":"The Story Of Frithiof The Bold","author":"Anonymous"}
+{"id":"24421","link":"http://www.gutenberg.org/ebooks/24421","title":"The Story Of Gunnlaug The Worm-Tongue And Raven The Skald","author":"Anonymous"}
+{"id":"24446","link":"http://www.gutenberg.org/ebooks/24446","title":"John Corwell, Sailor And Miner; and, Poisonous Fish","author":"Louis Becke"}
+{"id":"2456","link":"http://www.gutenberg.org/ebooks/2456","title":"The History Of Herodotus","author":"Herodotus"}
+{"id":"2463","link":"http://www.gutenberg.org/ebooks/2463","title":"The Prophet of Berkeley Square","author":"Robert Hichens"}
+{"id":"24639","link":"http://www.gutenberg.org/ebooks/24639","title":"The Colonial Mortuary Bard; \"'Reo,\" The Fisherman; and The Black Bream Of Australia","author":"Louis Becke"}
+{"id":"24640","link":"http://www.gutenberg.org/ebooks/24640","title":"\"Old Mary\"","author":"Louis Becke"}
+{"id":"24641","link":"http://www.gutenberg.org/ebooks/24641","title":"\"Martin Of Nitendi\"; and The River Of Dreams","author":"Louis Becke"}
+{"id":"24642","link":"http://www.gutenberg.org/ebooks/24642","title":"\"Five-Head\" Creek; and Fish Drugging In The Pacific","author":"Louis Becke"}
+{"id":"24805","link":"http://www.gutenberg.org/ebooks/24805","title":"Chinkie's Flat and Other Stories","author":"Louis Becke"}
+{"id":"24806","link":"http://www.gutenberg.org/ebooks/24806","title":"John Frewen, South Sea Whaler","author":"Louis Becke"}
+{"id":"24807","link":"http://www.gutenberg.org/ebooks/24807","title":"A Memory Of The Southern Seas","author":"Louis Becke"}
+{"id":"24835","link":"http://www.gutenberg.org/ebooks/24835","title":"Ridan The Devil And Other Stories","author":"Louis Becke"}
+{"id":"24836","link":"http://www.gutenberg.org/ebooks/24836","title":"Rodman The Boatsteerer And Other Stories","author":"Louis Becke"}
+{"id":"24837","link":"http://www.gutenberg.org/ebooks/24837","title":"The Trader's Wife","author":"Louis Becke"}
+{"id":"24838","link":"http://www.gutenberg.org/ebooks/24838","title":"Tessa","author":"Louis Becke"}
+{"id":"2489","link":"http://www.gutenberg.org/ebooks/2489","title":"Moby Dick; or The Whale","author":"Herman Melville"}
+{"id":"24895","link":"http://www.gutenberg.org/ebooks/24895","title":"The Call Of The South","author":"Louis Becke"}
+{"id":"24896","link":"http://www.gutenberg.org/ebooks/24896","title":"The Ebbing Of The Tide","author":"Louis Becke"}
+{"id":"24952","link":"http://www.gutenberg.org/ebooks/24952","title":"Amona; The Child; And The Beast; And Others","author":"Louis Becke"}
+{"id":"24953","link":"http://www.gutenberg.org/ebooks/24953","title":"The Flemmings And \"Flash Harry\" Of Savait","author":"Louis Becke"}
+{"id":"24954","link":"http://www.gutenberg.org/ebooks/24954","title":"\"Pig-Headed\" Sailor Men","author":"Louis Becke"}
+{"id":"24995","link":"http://www.gutenberg.org/ebooks/24995","title":"The Americans In The South Seas","author":"Louis Becke"}
+{"id":"24996","link":"http://www.gutenberg.org/ebooks/24996","title":"The Tapu Of Banderah","author":"Louis Becke"}
+{"id":"24997","link":"http://www.gutenberg.org/ebooks/24997","title":"The Beginning Of The Sea Story Of Australia","author":"Louis Becke"}
+{"id":"24998","link":"http://www.gutenberg.org/ebooks/24998","title":"Concerning \"Bully\" Hayes","author":"Louis Becke"}
+{"id":"2505","link":"http://www.gutenberg.org/ebooks/2505","title":"The Heir of Redclyffe","author":"Charlotte M. Yonge"}
+{"id":"25056","link":"http://www.gutenberg.org/ebooks/25056","title":"A Tale Of The Equatorial Islands; and The Brass Gun Of The Buccaneers","author":"Louis Becke"}
+{"id":"25057","link":"http://www.gutenberg.org/ebooks/25057","title":"The Adventure Of Elizabeth Morey, of New York","author":"Louis Becke"}
+{"id":"25058","link":"http://www.gutenberg.org/ebooks/25058","title":"Foster's Letter Of Marque","author":"Louis Becke"}
+{"id":"2527","link":"http://www.gutenberg.org/ebooks/2527","title":"The Sorrows of Young Werther","author":"J.W. von Goethe"}
+{"id":"2569","link":"http://www.gutenberg.org/ebooks/2569","title":"The Day's Work, Volume 1","author":"Rudyard Kipling"}
+{"id":"2601","link":"http://www.gutenberg.org/ebooks/2601","title":"Heartsease","author":"Charlotte M. Yonge"}
+{"id":"261","link":"http://www.gutenberg.org/ebooks/261","title":"A Dome of Many-Coloured Glass","author":"Amy Lowell"}
+{"id":"2619","link":"http://www.gutenberg.org/ebooks/2619","title":"The Home Book of Verse, Vol. 1 (of 4)","author":"Various"}
+{"id":"2620","link":"http://www.gutenberg.org/ebooks/2620","title":"The Home Book of Verse, Vol. 2 (of 4)","author":"Various"}
+{"id":"2621","link":"http://www.gutenberg.org/ebooks/2621","title":"The Home Book of Verse, Vol. 3 (of 4)","author":"Various"}
+{"id":"2622","link":"http://www.gutenberg.org/ebooks/2622","title":"The Home Book of Verse, Vol. 4 (of 4)","author":"Various"}
+{"id":"2638","link":"http://www.gutenberg.org/ebooks/2638","title":"The Idiot","author":"Fyodor Dostoyevsky"}
+{"id":"26475","link":"http://www.gutenberg.org/ebooks/26475","title":"The Boy Scouts Book of Campfire Stories","author":"Various"}
+{"id":"2648","link":"http://www.gutenberg.org/ebooks/2648","title":"George Cruikshank","author":"William Makepeace Thackeray"}
+{"id":"2675","link":"http://www.gutenberg.org/ebooks/2675","title":"Burlesques","author":"William Makepeace Thackeray"}
+{"id":"2686","link":"http://www.gutenberg.org/ebooks/2686","title":"The Book of Snobs","author":"William Makepeace Thackeray"}
+{"id":"2694","link":"http://www.gutenberg.org/ebooks/2694","title":"I and My Chimney","author":"Herman Melville"}
+{"id":"2700","link":"http://www.gutenberg.org/ebooks/2700","title":"Medical Essays","author":"Oliver Wendell Holmes, Sr."}
+{"id":"2701","link":"http://www.gutenberg.org/ebooks/2701","title":"Moby Dick; or The Whale","author":"Herman Melville"}
+{"id":"2707","link":"http://www.gutenberg.org/ebooks/2707","title":"The History Of Herodotus","author":"Herodotus"}
+{"id":"2731","link":"http://www.gutenberg.org/ebooks/2731","title":"The Christmas Books","author":"William Makepeace Thackeray"}
+{"id":"2732","link":"http://www.gutenberg.org/ebooks/2732","title":"Ballads","author":"William Makepeace Thackeray"}
+{"id":"2741","link":"http://www.gutenberg.org/ebooks/2741","title":"The Borgias"}
+{"id":"275","link":"http://www.gutenberg.org/ebooks/275","title":"The Confession of Faith","author":"Various"}
+{"id":"2768","link":"http://www.gutenberg.org/ebooks/2768","title":"The Paris Sketch Book Of Mr. M. A. Titmarsh","author":"William Makepeace Thackeray"}
+{"id":"277","link":"http://www.gutenberg.org/ebooks/277","title":"Trinity [Atomic Test] Site","author":"The National Atomic Museum"}
+{"id":"2781","link":"http://www.gutenberg.org/ebooks/2781","title":"Just So Stories","author":"Rudyard Kipling"}
+{"id":"2796","link":"http://www.gutenberg.org/ebooks/2796","title":"Memoirs of Mr. Charles J. Yellowplush","author":"William Makepeace Thackeray"}
+{"id":"2797","link":"http://www.gutenberg.org/ebooks/2797","title":"The Wolves and the Lamb","author":"William Makepeace Thackeray"}
+{"id":"2806","link":"http://www.gutenberg.org/ebooks/2806","title":"The Phantom 'Rickshaw and Other Ghost Stories","author":"Rudyard Kipling"}
+{"id":"2807","link":"http://www.gutenberg.org/ebooks/2807","title":"To Have and To Hold","author":"Mary Johnston"}
+{"id":"2814","link":"http://www.gutenberg.org/ebooks/2814","title":"Dubliners","author":"James Joyce"}
+{"id":"2817","link":"http://www.gutenberg.org/ebooks/2817","title":"Chamber Music","author":"James Joyce"}
+{"id":"2819","link":"http://www.gutenberg.org/ebooks/2819","title":"Barrack-Room Ballads","author":"Rudyard Kipling"}
+{"id":"2821","link":"http://www.gutenberg.org/ebooks/2821","title":"The Story of the Gadsby","author":"Rudyard Kipling"}
+{"id":"2823","link":"http://www.gutenberg.org/ebooks/2823","title":"The Fitz-Boodle Papers","author":"William Makepeace Thackeray"}
+{"id":"2828","link":"http://www.gutenberg.org/ebooks/2828","title":"Under the Deodars","author":"Rudyard Kipling"}
+{"id":"2831","link":"http://www.gutenberg.org/ebooks/2831","title":"A Bundle of Ballads","author":"Various"}
+{"id":"2843","link":"http://www.gutenberg.org/ebooks/2843","title":"Little Travels and Roadside Sketches","author":"William Makepeace Thackeray"}
+{"id":"2844","link":"http://www.gutenberg.org/ebooks/2844","title":"The Fatal Boots","author":"William Makepeace Thackeray"}
+{"id":"2845","link":"http://www.gutenberg.org/ebooks/2845","title":"Sir Nigel","author":"Arthur Conan Doyle"}
+{"id":"2852","link":"http://www.gutenberg.org/ebooks/2852","title":"The Hound of the Baskervilles","author":"A. Conan Doyle"}
+{"id":"2859","link":"http://www.gutenberg.org/ebooks/2859","title":"A Little Dinner at Timmins's","author":"William Makepeace Thackeray"}
+{"id":"28747","link":"http://www.gutenberg.org/ebooks/28747","title":"The Works Of Oliver Wendell Holmes","author":"Oliver Wendell Holmes, Sr."}
+{"id":"2876","link":"http://www.gutenberg.org/ebooks/2876","title":"The Light That Failed","author":"Rudyard Kipling"}
+{"id":"2898","link":"http://www.gutenberg.org/ebooks/2898","title":"Pioneers of the Old South","author":"Mary Johnston"}
+{"id":"294","link":"http://www.gutenberg.org/ebooks/294","title":"The Captain of the Pole-Star and Other Tales","author":"Arthur Conan Doyle"}
+{"id":"2942","link":"http://www.gutenberg.org/ebooks/2942","title":"Two Penniless Princesses","author":"Charlotte M. Yonge"}
+{"id":"29433","link":"http://www.gutenberg.org/ebooks/29433","title":"Nature","author":"Ralph Waldo Emerson"}
+{"id":"2944","link":"http://www.gutenberg.org/ebooks/2944","title":"Essays, First Series","author":"Ralph Waldo Emerson"}
+{"id":"2994","link":"http://www.gutenberg.org/ebooks/2994","title":"A Spirit in Prison","author":"Robert Hichens"}
+{"id":"3006","link":"http://www.gutenberg.org/ebooks/3006","title":"Stalky & Co.","author":"Rudyard Kipling"}
+{"id":"3068","link":"http://www.gutenberg.org/ebooks/3068","title":"Washington Square Plays","author":"Various"}
+{"id":"3069","link":"http://www.gutenberg.org/ebooks/3069","title":"The Great Boer War","author":"Arthur Conan Doyle"}
+{"id":"316","link":"http://www.gutenberg.org/ebooks/316","title":"The Golden Road","author":"Lucy Maud Montgomery"}
+{"id":"3161","link":"http://www.gutenberg.org/ebooks/3161","title":"Narrative of New Netherland","author":"Various"}
+{"id":"323","link":"http://www.gutenberg.org/ebooks/323","title":"Verses 1889-1896","author":"Rudyard Kipling"}
+{"id":"3285","link":"http://www.gutenberg.org/ebooks/3285","title":"The Deerslayer","author":"James Fenimore Cooper"}
+{"id":"3289","link":"http://www.gutenberg.org/ebooks/3289","title":"The Valley of Fear","author":"Sir Arthur Conan Doyle"}
+{"id":"3292","link":"http://www.gutenberg.org/ebooks/3292","title":"The Clever Woman of the Family","author":"Charlotte M. Yonge"}
+{"id":"336","link":"http://www.gutenberg.org/ebooks/336","title":"Indian Heroes and Great Chieftains","author":"[AKA Ohiyesa], Charles A. Eastman"}
+{"id":"337","link":"http://www.gutenberg.org/ebooks/337","title":"Indian Boyhood","author":"[AKA Ohiyesa], Charles A. Eastman"}
+{"id":"339","link":"http://www.gutenberg.org/ebooks/339","title":"Old Indian Days","author":"[AKA Ohiyesa], Charles A. Eastman"}
+{"id":"33996","link":"http://www.gutenberg.org/ebooks/33996","title":"The Spy in Black","author":"J. Storer Clouston"}
+{"id":"340","link":"http://www.gutenberg.org/ebooks/340","title":"The Soul of the Indian","author":"[AKA Ohiyesa], Charles A. Eastman"}
+{"id":"3407","link":"http://www.gutenberg.org/ebooks/3407","title":"The Spell of Egypt","author":"Robert Hichens"}
+{"id":"3429","link":"http://www.gutenberg.org/ebooks/3429","title":"Saint George for England","author":"G. A. Henty"}
+{"id":"346","link":"http://www.gutenberg.org/ebooks/346","title":"The Troll Garden and Selected Stories","author":"Willa Cather"}
+{"id":"347","link":"http://www.gutenberg.org/ebooks/347","title":"Grettir The Strong","author":"Unknown"}
+{"id":"356","link":"http://www.gutenberg.org/ebooks/356","title":"Beyond the City","author":"Arthur Conan Doyle"}
+{"id":"3610","link":"http://www.gutenberg.org/ebooks/3610","title":"The Daisy Chain","author":"Charlotte Yonge"}
+{"id":"3637","link":"http://www.gutenberg.org/ebooks/3637","title":"The Garden Of Allah","author":"Robert Hichens"}
+{"id":"3650","link":"http://www.gutenberg.org/ebooks/3650","title":"Selections From American Poetry","author":"Various"}
+{"id":"3673","link":"http://www.gutenberg.org/ebooks/3673","title":"Essays Before a Sonata","author":"Charles Ives"}
+{"id":"3694","link":"http://www.gutenberg.org/ebooks/3694","title":"Every Man In His Humour","author":"Ben Jonson"}
+{"id":"3695","link":"http://www.gutenberg.org/ebooks/3695","title":"Every Man Out Of His Humour","author":"Ben Jonson"}
+{"id":"3771","link":"http://www.gutenberg.org/ebooks/3771","title":"Cynthia's Revels","author":"Ben Jonson"}
+{"id":"4011","link":"http://www.gutenberg.org/ebooks/4011","title":"Epicoene","author":"Ben Jonson"}
+{"id":"4039","link":"http://www.gutenberg.org/ebooks/4039","title":"Volpone; Or, The Fox","author":"Ben Jonson"}
+{"id":"40412","link":"http://www.gutenberg.org/ebooks/40412","title":"Through the Year With Famous Authors","author":"Mabel Patterson"}
+{"id":"4081","link":"http://www.gutenberg.org/ebooks/4081","title":"The Alchemist","author":"Ben Jonson"}
+{"id":"40909","link":"http://www.gutenberg.org/ebooks/40909","title":"Anthony Trent, Master Criminal","author":"Wyndham Martyn"}
+{"id":"4092","link":"http://www.gutenberg.org/ebooks/4092","title":"The Monikins","author":"J. Fenimore Cooper"}
+{"id":"41453","link":"http://www.gutenberg.org/ebooks/41453","title":"The Mysterious Mr. Miller","author":"William Le Queux"}
+{"id":"41613","link":"http://www.gutenberg.org/ebooks/41613","title":"The Strand Magazine, Vol. 1 - No. 1 - January 1891","author":"Various"}
+{"id":"41622","link":"http://www.gutenberg.org/ebooks/41622","title":"Futuria Fantasia, Summer 1939","author":"Ray Bradbury"}
+{"id":"41627","link":"http://www.gutenberg.org/ebooks/41627","title":"Futuria Fantasia, Winter 1940","author":"Ray Bradbury"}
+{"id":"41628","link":"http://www.gutenberg.org/ebooks/41628","title":"Dave Darrin and the German Submarines","author":"H. Irving Hancock"}
+{"id":"41629","link":"http://www.gutenberg.org/ebooks/41629","title":"Harper's New Monthly Magazine, No. XXIII.--April, 1852.--Vol. IV.","author":"Various"}
+{"id":"41630","link":"http://www.gutenberg.org/ebooks/41630","title":"The Story of Geronimo","author":"James Arthur Kjelgaard"}
+{"id":"41631","link":"http://www.gutenberg.org/ebooks/41631","title":"A Dear Little Girl's Summer Holidays","author":"Amy E. Blanchard"}
+{"id":"41632","link":"http://www.gutenberg.org/ebooks/41632","title":"The Art of Entertaining","author":"M. E. W. Sherwood"}
+{"id":"41633","link":"http://www.gutenberg.org/ebooks/41633","title":"A Christian Directory (Volume 1 of 4)","author":"Richard Baxter"}
+{"id":"41693","link":"http://www.gutenberg.org/ebooks/41693","title":"Lays and legends","author":"Edith Nesbit"}
+{"id":"41694","link":"http://www.gutenberg.org/ebooks/41694","title":"Turner","author":"C. Lewis Hind"}
+{"id":"41695","link":"http://www.gutenberg.org/ebooks/41695","title":"The Appendages, Anatomy, and Relationships of Trilobites","author":"Percy Edward Raymond"}
+{"id":"41696","link":"http://www.gutenberg.org/ebooks/41696","title":"The Feasts of Autolycus","author":"Elizabeth Robins Pennell"}
+{"id":"41707","link":"http://www.gutenberg.org/ebooks/41707","title":"The Development of Metaphysics in Persia","author":"Muhammad Iqbal"}
+{"id":"41708","link":"http://www.gutenberg.org/ebooks/41708","title":"Jack the Hunchback","author":"James Otis"}
+{"id":"41709","link":"http://www.gutenberg.org/ebooks/41709","title":"A Girl's Life in Virginia before the War","author":"Letitia M. Burwell"}
+{"id":"41711","link":"http://www.gutenberg.org/ebooks/41711","title":"A Woman Martyr","author":"Alice Mangold Diehl"}
+{"id":"41726","link":"http://www.gutenberg.org/ebooks/41726","title":"Narcissus","author":"Unknown"}
+{"id":"41756","link":"http://www.gutenberg.org/ebooks/41756","title":"Against the Current","author":"Edward A. Steiner"}
+{"id":"41757","link":"http://www.gutenberg.org/ebooks/41757","title":"Roger the Bold","author":"F. S. Brereton"}
+{"id":"41758","link":"http://www.gutenberg.org/ebooks/41758","title":"Under the Chinese Dragon","author":"F. S. Brereton"}
+{"id":"41759","link":"http://www.gutenberg.org/ebooks/41759","title":"International Law","author":"George Grafton Wilson and George Fox Tucker"}
+{"id":"41760","link":"http://www.gutenberg.org/ebooks/41760","title":"The Poetical Works of James Beattie","author":"James Beattie"}
+{"id":"41761","link":"http://www.gutenberg.org/ebooks/41761","title":"Traditions and Hearthside Stories of West Cornwall, Second Series","author":"William Bottrell"}
+{"id":"41762","link":"http://www.gutenberg.org/ebooks/41762","title":"The Queer, the Quaint and the Quizzical","author":"Frank H. Stauffer"}
+{"id":"41764","link":"http://www.gutenberg.org/ebooks/41764","title":"Albrecht","author":"Arlo Bates"}
+{"id":"41765","link":"http://www.gutenberg.org/ebooks/41765","title":"Half a Hundred Hero Tales","author":"Various"}
+{"id":"41767","link":"http://www.gutenberg.org/ebooks/41767","title":"The Hero of Panama","author":"F. S. Brereton"}
+{"id":"41768","link":"http://www.gutenberg.org/ebooks/41768","title":"Harper's New Monthly Magazine, No. IX.--February, 1851.--Vol. II.","author":"Various"}
+{"id":"41770","link":"http://www.gutenberg.org/ebooks/41770","title":"Studies in Moro History, Law, and Religion","author":"Najeeb M. Saleeby"}
+{"id":"41771","link":"http://www.gutenberg.org/ebooks/41771","title":"The History of Sulu","author":"Najeeb M. Saleeby"}
+{"id":"41772","link":"http://www.gutenberg.org/ebooks/41772","title":"The Silent Alarm","author":"Roy J. Snell"}
+{"id":"41773","link":"http://www.gutenberg.org/ebooks/41773","title":"Encyclopaedia Britannica, 11th Edition, Volume 16, Slice 2","author":"Various"}
+{"id":"41774","link":"http://www.gutenberg.org/ebooks/41774","title":"Pincher Martin, O.D.","author":"H. Taprell Dorling"}
+{"id":"41775","link":"http://www.gutenberg.org/ebooks/41775","title":"Cornish Characters","author":"S. Baring-Gould"}
+{"id":"41777","link":"http://www.gutenberg.org/ebooks/41777","title":"Blazing Arrow","author":"Edward S. Ellis"}
+{"id":"41778","link":"http://www.gutenberg.org/ebooks/41778","title":"Epitome of the Pharmacopeia of the United States and the National Formulary","author":"A. W. Hewlett"}
+{"id":"41779","link":"http://www.gutenberg.org/ebooks/41779","title":"The Human Boy and the War","author":"Eden Philpotts"}
+{"id":"41782","link":"http://www.gutenberg.org/ebooks/41782","title":"The Moths of the British Isles, First Series","author":"Richard South"}
+{"id":"41783","link":"http://www.gutenberg.org/ebooks/41783","title":"King Arthur in Cornwall","author":"W. Howship (William Howship) Dickinson"}
+{"id":"41784","link":"http://www.gutenberg.org/ebooks/41784","title":"Wyoming","author":"Edward Sylvester Ellis"}
+{"id":"41785","link":"http://www.gutenberg.org/ebooks/41785","title":"Archaic England","author":"Harold Bayley"}
+{"id":"41787","link":"http://www.gutenberg.org/ebooks/41787","title":"Reports of the Committee on the Conduct of the War","author":"United States Senate"}
+{"id":"41788","link":"http://www.gutenberg.org/ebooks/41788","title":"General Gatacre","author":"Beatrix Gatacre"}
+{"id":"41790","link":"http://www.gutenberg.org/ebooks/41790","title":"Quintus Oakes","author":"Charles Ross Jackson"}
+{"id":"41791","link":"http://www.gutenberg.org/ebooks/41791","title":"The House by the River","author":"A. P. Herbert"}
+{"id":"41792","link":"http://www.gutenberg.org/ebooks/41792","title":"Theodore Watts-Dunton","author":"James Douglas"}
+{"id":"41793","link":"http://www.gutenberg.org/ebooks/41793","title":"The Strand Magazine, Volume XVII, February 1899, No. 98.","author":"Various"}
+{"id":"41794","link":"http://www.gutenberg.org/ebooks/41794","title":"The Last Miracle","author":"M. P. Shiel"}
+{"id":"41795","link":"http://www.gutenberg.org/ebooks/41795","title":"Tales of Northumbria","author":"Howard Pease"}
+{"id":"41796","link":"http://www.gutenberg.org/ebooks/41796","title":"The Brownie of Bodsbeck, and Other Tales, Vol. II (of 2)","author":"James Hogg"}
+{"id":"41797","link":"http://www.gutenberg.org/ebooks/41797","title":"The Story Book Girls","author":"Christina Gowans Whyte"}
+{"id":"41807","link":"http://www.gutenberg.org/ebooks/41807","title":"The Panama Canal","author":"Frederic Jennings Haskin"}
+{"id":"41808","link":"http://www.gutenberg.org/ebooks/41808","title":"The San Francisco Fairy","author":"Anonymous"}
+{"id":"41809","link":"http://www.gutenberg.org/ebooks/41809","title":"Byron","author":"Richard Edgcumbe"}
+{"id":"41819","link":"http://www.gutenberg.org/ebooks/41819","title":"The Political Future of India","author":"Lajpat Rai"}
+{"id":"41820","link":"http://www.gutenberg.org/ebooks/41820","title":"The Champagne Standard","author":"Mrs. John Lane"}
+{"id":"41822","link":"http://www.gutenberg.org/ebooks/41822","title":"Phroso","author":"Anthony Hope"}
+{"id":"41823","link":"http://www.gutenberg.org/ebooks/41823","title":"Belford's Magazine, Vol II, No. 10, March 1889","author":"Various"}
+{"id":"41824","link":"http://www.gutenberg.org/ebooks/41824","title":"Hogarth","author":"C. Lewis Hind"}
+{"id":"41825","link":"http://www.gutenberg.org/ebooks/41825","title":"The Road Builders","author":"Samuel Merwin"}
+{"id":"41826","link":"http://www.gutenberg.org/ebooks/41826","title":"Wild Heather","author":"L. T. Meade"}
+{"id":"41827","link":"http://www.gutenberg.org/ebooks/41827","title":"Dick Merriwell Abroad","author":"Burt L. Standish"}
+{"id":"41828","link":"http://www.gutenberg.org/ebooks/41828","title":"General Bounce","author":"G. J. Whyte-Melville"}
+{"id":"41829","link":"http://www.gutenberg.org/ebooks/41829","title":"The Serf","author":"Guy Thorne"}
+{"id":"41830","link":"http://www.gutenberg.org/ebooks/41830","title":"The Spell of Flanders","author":"Edward Neville Vose"}
+{"id":"41831","link":"http://www.gutenberg.org/ebooks/41831","title":"Betty Leicester's Christmas","author":"Sarah Orne Jewett"}
+{"id":"41836","link":"http://www.gutenberg.org/ebooks/41836","title":"Carlo Dolci","author":"George Hay"}
+{"id":"41837","link":"http://www.gutenberg.org/ebooks/41837","title":"The Secret Mark","author":"Roy J. Snell"}
+{"id":"41838","link":"http://www.gutenberg.org/ebooks/41838","title":"The Art of Logical Thinking","author":"William Walker Atkinson"}
+{"id":"41839","link":"http://www.gutenberg.org/ebooks/41839","title":"The Boy's Playbook of Science","author":"John Henry Pepper"}
+{"id":"41840","link":"http://www.gutenberg.org/ebooks/41840","title":"The Elements of Geology; Adapted to the Use of Schools and Colleges","author":"Justin R. Loomis"}
+{"id":"41844","link":"http://www.gutenberg.org/ebooks/41844","title":"The Golden Bough","author":"George Gibbs"}
+{"id":"41846","link":"http://www.gutenberg.org/ebooks/41846","title":"Bolax","author":"Josephine Culpeper"}
+{"id":"41847","link":"http://www.gutenberg.org/ebooks/41847","title":"Baseball Joe in the Central League","author":"Lester Chadwick"}
+{"id":"41854","link":"http://www.gutenberg.org/ebooks/41854","title":"Polly the Pagan","author":"Isabel Anderson"}
+{"id":"41855","link":"http://www.gutenberg.org/ebooks/41855","title":"The Marne","author":"Edith Wharton"}
+{"id":"41856","link":"http://www.gutenberg.org/ebooks/41856","title":"Manual of References and Exercises in Economics","author":"Frank A. Fetter"}
+{"id":"41857","link":"http://www.gutenberg.org/ebooks/41857","title":"The Broken Sword","author":"Dennison Worthington"}
+{"id":"41858","link":"http://www.gutenberg.org/ebooks/41858","title":"Smith College Stories","author":"Josephine Dodge Daskam"}
+{"id":"41867","link":"http://www.gutenberg.org/ebooks/41867","title":"The Cloud","author":"Sartell Prentice"}
+{"id":"41869","link":"http://www.gutenberg.org/ebooks/41869","title":"Old Tavern Signs","author":"Fritz August Gottfried Endell"}
+{"id":"41870","link":"http://www.gutenberg.org/ebooks/41870","title":"Gold and Incense","author":"Mark Guy Pearse"}
+{"id":"41871","link":"http://www.gutenberg.org/ebooks/41871","title":"Scribner's Magazine, Volume 26, July 1899","author":"Various"}
+{"id":"41916","link":"http://www.gutenberg.org/ebooks/41916","title":"Nestleton Magna","author":"J. Jackson Wray"}
+{"id":"42","link":"http://www.gutenberg.org/ebooks/42","title":"Dr. Jekyll and Mr. Hyde","author":"Robert Louis Stevenson"}
+{"id":"4216","link":"http://www.gutenberg.org/ebooks/4216","title":"Touch and Go","author":"D. H. Lawrence"}
+{"id":"4217","link":"http://www.gutenberg.org/ebooks/4217","title":"A Portrait of the Artist as a Young Man","author":"James Joyce"}
+{"id":"4300","link":"http://www.gutenberg.org/ebooks/4300","title":"Ulysses","author":"James Joyce"}
+{"id":"4520","link":"http://www.gutenberg.org/ebooks/4520","title":"Aaron's Rod","author":"D. H. Lawrence"}
+{"id":"4558","link":"http://www.gutenberg.org/ebooks/4558","title":"Barry Lyndon","author":"William Makepeace Thackeray"}
+{"id":"4593","link":"http://www.gutenberg.org/ebooks/4593","title":"Friends and Neighbors","author":"Anonymous"}
+{"id":"46","link":"http://www.gutenberg.org/ebooks/46","title":"A Christmas Carol","author":"Charles Dickens"}
+{"id":"4603","link":"http://www.gutenberg.org/ebooks/4603","title":"In the Wilderness","author":"Robert Hichens"}
+{"id":"4931","link":"http://www.gutenberg.org/ebooks/4931","title":"Won by the Sword","author":"G.A. Henty"}
+{"id":"4932","link":"http://www.gutenberg.org/ebooks/4932","title":"A Knight of the White Cross","author":"G.A. Henty"}
+{"id":"4938","link":"http://www.gutenberg.org/ebooks/4938","title":"U.S. Presidential Inaugural Addresses","author":"Various"}
+{"id":"496","link":"http://www.gutenberg.org/ebooks/496","title":"The Little Lame Prince","author":"Miss Mulock--Pseudonym of Maria Dinah Craik"}
+{"id":"4979","link":"http://www.gutenberg.org/ebooks/4979","title":"Blacky the Crow","author":"Thornton W. Burgess"}
+{"id":"5061","link":"http://www.gutenberg.org/ebooks/5061","title":"The Children's Book of Christmas Stories","author":"Various"}
+{"id":"5075","link":"http://www.gutenberg.org/ebooks/5075","title":"The Lion of the North","author":"G.A. Henty"}
+{"id":"5080","link":"http://www.gutenberg.org/ebooks/5080","title":"Magnum Bonum","author":"Charlotte M. Yonge"}
+{"id":"5124","link":"http://www.gutenberg.org/ebooks/5124","title":"Henrietta's Wish","author":"Charlotte M. Yonge"}
+{"id":"5128","link":"http://www.gutenberg.org/ebooks/5128","title":"The Young Carthaginian","author":"G.A. Henty"}
+{"id":"5166","link":"http://www.gutenberg.org/ebooks/5166","title":"The Poetaster","author":"Ben Jonson"}
+{"id":"5211","link":"http://www.gutenberg.org/ebooks/5211","title":"The Famous Missions of California","author":"William Henry Hudson"}
+{"id":"5232","link":"http://www.gutenberg.org/ebooks/5232","title":"His Fall","author":"Ben Jonson"}
+{"id":"5333","link":"http://www.gutenberg.org/ebooks/5333","title":"Every Man In His Humor","author":"Ben Jonson"}
+{"id":"5406","link":"http://www.gutenberg.org/ebooks/5406","title":"Afoot in England","author":"W.H. Hudson"}
+{"id":"556","link":"http://www.gutenberg.org/ebooks/556","title":"Rewards and Fairies","author":"Rudyard Kipling"}
+{"id":"5701","link":"http://www.gutenberg.org/ebooks/5701","title":"The Tale of Fatty Coon","author":"Arthur Scott Bailey"}
+{"id":"5727","link":"http://www.gutenberg.org/ebooks/5727","title":"The Tale of Freddie Firefly","author":"Arthur Scott Bailey"}
+{"id":"580","link":"http://www.gutenberg.org/ebooks/580","title":"The Pickwick Papers","author":"Charles Dickens"}
+{"id":"594","link":"http://www.gutenberg.org/ebooks/594","title":"Twilight Stories","author":"Various"}
+{"id":"5955","link":"http://www.gutenberg.org/ebooks/5955","title":"The Tale of Tommy Fox","author":"Arthur Scott Bailey"}
+{"id":"5982","link":"http://www.gutenberg.org/ebooks/5982","title":"Eeldrop and Appleplex","author":"T.S. Eliot"}
+{"id":"600","link":"http://www.gutenberg.org/ebooks/600","title":"Notes from the Underground","author":"Feodor Dostoevsky"}
+{"id":"6116","link":"http://www.gutenberg.org/ebooks/6116","title":"Out of the Primitive","author":"Robert Ames Bennet"}
+{"id":"6164","link":"http://www.gutenberg.org/ebooks/6164","title":"The Life of the Fields","author":"Richard Jefferies"}
+{"id":"6352","link":"http://www.gutenberg.org/ebooks/6352","title":"Dora Deane","author":"Mary J. Holmes"}
+{"id":"6414","link":"http://www.gutenberg.org/ebooks/6414","title":"Lectures and Essays","author":"T.H. Huxley"}
+{"id":"6450","link":"http://www.gutenberg.org/ebooks/6450","title":"The Prairie","author":"J. Fenimore Cooper"}
+{"id":"6471","link":"http://www.gutenberg.org/ebooks/6471","title":"The Children of the New Forest","author":"Captain Marryat"}
+{"id":"6616","link":"http://www.gutenberg.org/ebooks/6616","title":"December Love","author":"Robert Hichens"}
+{"id":"6656","link":"http://www.gutenberg.org/ebooks/6656","title":"The Kiltartan Poetry Book","author":"Lady Gregory"}
+{"id":"6688","link":"http://www.gutenberg.org/ebooks/6688","title":"The Mill on the Floss","author":"George Eliot"}
+{"id":"6692","link":"http://www.gutenberg.org/ebooks/6692","title":"The Swiss Family Robinson Told in Words of One Syllable","author":"Mary Godolphin"}
+{"id":"6754","link":"http://www.gutenberg.org/ebooks/6754","title":"The Tale of Brownie Beaver","author":"Arthur Scott Bailey"}
+{"id":"6842","link":"http://www.gutenberg.org/ebooks/6842","title":"Sadhana","author":"Rabindranath Tagore"}
+{"id":"6936","link":"http://www.gutenberg.org/ebooks/6936","title":"Robinson Crusoe","author":"Mary Godolphin"}
+{"id":"6981","link":"http://www.gutenberg.org/ebooks/6981","title":"The Open Air","author":"Richard Jefferies"}
+{"id":"7030","link":"http://www.gutenberg.org/ebooks/7030","title":"Field and Hedgerow","author":"Richard Jefferies"}
+{"id":"7088","link":"http://www.gutenberg.org/ebooks/7088","title":"The Pilgrim's Progress in Words of One Syllable","author":"Mary Godolphin"}
+{"id":"7229","link":"http://www.gutenberg.org/ebooks/7229","title":"Rujub, the Juggler","author":"G. A. Henty"}
+{"id":"7265","link":"http://www.gutenberg.org/ebooks/7265","title":"The History of Pendennis","author":"William Makepeace Thackeray"}
+{"id":"7318","link":"http://www.gutenberg.org/ebooks/7318","title":"The Bravest of the Brave","author":"G. A. Henty"}
+{"id":"7346","link":"http://www.gutenberg.org/ebooks/7346","title":"Among Malay Pirates","author":"G. A. Henty"}
+{"id":"74","link":"http://www.gutenberg.org/ebooks/74","title":"The Adventures of Tom Sawyer, Complete","author":"Mark Twain (Samuel Clemens)"}
+{"id":"7467","link":"http://www.gutenberg.org/ebooks/7467","title":"The Newcomes","author":"William Makepeace Thackeray"}
+{"id":"76","link":"http://www.gutenberg.org/ebooks/76","title":"Adventures of Huckleberry Finn, Complete","author":"Mark Twain (Samuel Clemens)"}
+{"id":"766","link":"http://www.gutenberg.org/ebooks/766","title":"David Copperfield","author":"Charles Dickens"}
+{"id":"7846","link":"http://www.gutenberg.org/ebooks/7846","title":"Departmental Ditties and Barrack Room Ballads","author":"Rudyard Kipling"}
+{"id":"7889","link":"http://www.gutenberg.org/ebooks/7889","title":"Erotica Romana","author":"Johann Wolfgang Goethe"}
+{"id":"7964","link":"http://www.gutenberg.org/ebooks/7964","title":"The Mystery of Cloomber","author":"Arthur Conan Doyle"}
+{"id":"8123","link":"http://www.gutenberg.org/ebooks/8123","title":"The Virginians","author":"William Makepeace Thackeray"}
+{"id":"8155","link":"http://www.gutenberg.org/ebooks/8155","title":"Colonel Thorndyke's Secret","author":"G. A. Henty"}
+{"id":"821","link":"http://www.gutenberg.org/ebooks/821","title":"Dombey and Son","author":"Charles Dickens"}
+{"id":"834","link":"http://www.gutenberg.org/ebooks/834","title":"Memoirs of Sherlock Holmes","author":"Sir Arthur Conan Doyle"}
+{"id":"8394","link":"http://www.gutenberg.org/ebooks/8394","title":"The Doings Of Raffles Haw","author":"Arthur Conan Doyle"}
+{"id":"84","link":"http://www.gutenberg.org/ebooks/84","title":"Frankenstein","author":"Mary Wollstonecraft (Godwin) Shelley"}
+{"id":"841","link":"http://www.gutenberg.org/ebooks/841","title":"Men, Women and Ghosts","author":"Amy Lowell"}
+{"id":"8435","link":"http://www.gutenberg.org/ebooks/8435","title":"The Sturdy Oak","author":"Samuel Merwin, et al."}
+{"id":"8465","link":"http://www.gutenberg.org/ebooks/8465","title":"The Russian Revolution; The Jugo-Slav Movement","author":"Alexander Petrunkevitch, Samuel Northrup Harper,"}
+{"id":"8502","link":"http://www.gutenberg.org/ebooks/8502","title":"Common Diseases of Farm Animals","author":"R. A. Craig"}
+{"id":"853","link":"http://www.gutenberg.org/ebooks/853","title":"The Confutatio Pontificia","author":"Anonymous"}
+{"id":"8549","link":"http://www.gutenberg.org/ebooks/8549","title":"The Woman With The Fan","author":"Robert Hichens"}
+{"id":"8567","link":"http://www.gutenberg.org/ebooks/8567","title":"The Iroquois Book of Rites","author":"Horatio Hale"}
+{"id":"8576","link":"http://www.gutenberg.org/ebooks/8576","title":"By Sheer Pluck","author":"G. A. Henty"}
+{"id":"86","link":"http://www.gutenberg.org/ebooks/86","title":"A Connecticut Yankee in King Arthur's Court, Complete","author":"Mark Twain (Samuel Clemens)"}
+{"id":"862","link":"http://www.gutenberg.org/ebooks/862","title":"Philosophy 4","author":"Owen Wister"}
+{"id":"8727","link":"http://www.gutenberg.org/ebooks/8727","title":"The Last Galley","author":"Arthur Conan Doyle"}
+{"id":"8732","link":"http://www.gutenberg.org/ebooks/8732","title":"Through the Fray","author":"G. A. Henty"}
+{"id":"883","link":"http://www.gutenberg.org/ebooks/883","title":"Our Mutual Friend","author":"Charles Dickens"}
+{"id":"903","link":"http://www.gutenberg.org/ebooks/903","title":"The White Company","author":"Arthur Conan Doyle"}
+{"id":"9068","link":"http://www.gutenberg.org/ebooks/9068","title":"Apu Ollantay","author":"Anonymous"}
+{"id":"910","link":"http://www.gutenberg.org/ebooks/910","title":"White Fang","author":"Jack London"}
+{"id":"917","link":"http://www.gutenberg.org/ebooks/917","title":"Barnaby Rudge","author":"Charles Dickens"}
+{"id":"925","link":"http://www.gutenberg.org/ebooks/925","title":"United States Presidents' Inaugural Speeches","author":"Various"}
+{"id":"9267","link":"http://www.gutenberg.org/ebooks/9267","title":"Chip, of the Flying U","author":"B. M. Bower"}
+{"id":"9311","link":"http://www.gutenberg.org/ebooks/9311","title":"Hetty's Strange History","author":"Anonymous"}
+{"id":"9331","link":"http://www.gutenberg.org/ebooks/9331","title":"The Hunted Outlaw","author":"Anonymous"}
+{"id":"940","link":"http://www.gutenberg.org/ebooks/940","title":"The Last of the Mohicans","author":"James Fenimore Cooper"}
+{"id":"9462","link":"http://www.gutenberg.org/ebooks/9462","title":"The Tale of Sandy Chipmunk","author":"Arthur Scott Bailey"}
+{"id":"9504","link":"http://www.gutenberg.org/ebooks/9504","title":"Micah Clarke","author":"Arthur Conan Doyle"}
+{"id":"963","link":"http://www.gutenberg.org/ebooks/963","title":"Little Dorrit","author":"Charles Dickens"}
+{"id":"967","link":"http://www.gutenberg.org/ebooks/967","title":"The Life And Adventures Of Nicholas Nickleby","author":"Charles Dickens"}
+{"id":"968","link":"http://www.gutenberg.org/ebooks/968","title":"Life And Adventures Of Martin Chuzzlewit","author":"Charles Dickens"}
+{"id":"977","link":"http://www.gutenberg.org/ebooks/977","title":"American Notes","author":"Rudyard Kipling"}
+{"id":"98","link":"http://www.gutenberg.org/ebooks/98","title":"A Tale of Two Cities","author":"Charles Dickens"}
+{"id":"981","link":"http://www.gutenberg.org/ebooks/981","title":"Beowulf","author":"Anonymous"}
+{"id":"984","link":"http://www.gutenberg.org/ebooks/984","title":"5000 B. C. to Date","author":"Anonymous"}
+{"id":"9846","link":"http://www.gutenberg.org/ebooks/9846","title":"Excursions","author":"Henry D. Thoreau"}
+{"id":"829","link":"http://www.gutenberg.org/ebooks/829","title":"Gulliver's Travels","author":"Jonathan Swift"}
+{"id":"28054","link":"http://www.gutenberg.org/ebooks/28054","title":"The Brothers Karamazov","author":"Fyodor Dostoyevsky"}
+{"id":"41833","link":"http://www.gutenberg.org/ebooks/41833","title":"The Diplomatic Correspondence of the American Revolution, Vol. V (of 12)","author":"Various"}
+{"id":"9405","link":"http://www.gutenberg.org/ebooks/9405","title":"The Book of Old English Ballads","author":"George Wharton Edwards"}
+{"id":"2587","link":"http://www.gutenberg.org/ebooks/2587","title":"Life Is A Dream","author":"Pedro Calderon de la Barca"}
+{"id":"6372","link":"http://www.gutenberg.org/ebooks/6372","title":"The Wonder-Working Magician","author":"Pedro Calderon de la Barca"}
+{"id":"6866","link":"http://www.gutenberg.org/ebooks/6866","title":"The Story of Siegfried","author":"James Baldwin"}
+{"id":"2943","link":"http://www.gutenberg.org/ebooks/2943","title":"The Great Hunger","author":"Johan Bojer"}
+{"id":"7520","link":"http://www.gutenberg.org/ebooks/7520","title":"Snow-Blind","author":"Katharine Newlin Burt"}
+{"id":"3663","link":"http://www.gutenberg.org/ebooks/3663","title":"The Girl From Keller's","author":"Harold Bindloss"}
+{"id":"5131","link":"http://www.gutenberg.org/ebooks/5131","title":"Childe Harold's Pilgrimage","author":"Lord Byron"}
+{"id":"507","link":"http://www.gutenberg.org/ebooks/507","title":"Adam Bede","author":"George Eliot"}
+{"id":"871","link":"http://www.gutenberg.org/ebooks/871","title":"The Golden Sayings of Epictetus","author":"Epictetus"}
+{"id":"7047","link":"http://www.gutenberg.org/ebooks/7047","title":"Back To Billabong","author":"Mary Grant Bruce"}
+{"id":"2554","link":"http://www.gutenberg.org/ebooks/2554","title":"Crime and Punishment","author":"Fyodor Dostoevsky"}
+{"id":"2302","link":"http://www.gutenberg.org/ebooks/2302","title":"Poor Folk","author":"Fyodor Dostoyevsky"}
+{"id":"41961","link":"http://www.gutenberg.org/ebooks/41961","title":"The Cruise of the O Moo","author":"Roy J. Snell"}
+{"id":"7366","link":"http://www.gutenberg.org/ebooks/7366","title":"Three Comedies","author":"Bjornstjerne M. Bjornson"}
+{"id":"41962","link":"http://www.gutenberg.org/ebooks/41962","title":"The Law of the North (Originally published as Empery)","author":"Samuel Alexander White"}
+{"id":"3093","link":"http://www.gutenberg.org/ebooks/3093","title":"The Eve of the Revolution","author":"Carl Becker"}
+{"id":"21967","link":"http://www.gutenberg.org/ebooks/21967","title":"Athaliah","author":"J. Donkersley"}
+{"id":"2880","link":"http://www.gutenberg.org/ebooks/2880","title":"A Blot In The 'Scutcheon","author":"Robert Browning"}
+{"id":"4253","link":"http://www.gutenberg.org/ebooks/4253","title":"Dramatic Romances","author":"Robert Browning"}
+{"id":"3007","link":"http://www.gutenberg.org/ebooks/3007","title":"The Smoky God","author":"Willis George Emerson"}
+{"id":"17","link":"http://www.gutenberg.org/ebooks/17","title":"The Book Of Mormon","author":"Anonymous"}
+{"id":"2799","link":"http://www.gutenberg.org/ebooks/2799","title":"Eben Holden","author":"Irving Bacheller"}
+{"id":"7486","link":"http://www.gutenberg.org/ebooks/7486","title":"The Master of Silence","author":"Irving Bacheller"}
+{"id":"3528","link":"http://www.gutenberg.org/ebooks/3528","title":"the Man and the Artist","author":"Ludwig van Beethoven"}
+{"id":"3233","link":"http://www.gutenberg.org/ebooks/3233","title":"In the Heart of Africa","author":"Samuel White Baker"}
+{"id":"3231","link":"http://www.gutenberg.org/ebooks/3231","title":"The Rifle and The Hound in Ceylon","author":"Samuel White Baker"}
+{"id":"5889","link":"http://www.gutenberg.org/ebooks/5889","title":"The BYU Solar Cooker/Cooler","author":"Steven E. Jones"}
+{"id":"3163","link":"http://www.gutenberg.org/ebooks/3163","title":"Birds and Bees, Sharp Eyes and, Other Papers","author":"John Burroughs"}
+{"id":"5177","link":"http://www.gutenberg.org/ebooks/5177","title":"Birds and Poets","author":"John Burroughs"}
+{"id":"2778","link":"http://www.gutenberg.org/ebooks/2778","title":"Jewel","author":"Clara Louise Burnham"}
+{"id":"2568","link":"http://www.gutenberg.org/ebooks/2568","title":"Trent's Last Case","author":"E.C. (Edmund Clerihew) Bentley"}
+{"id":"23182","link":"http://www.gutenberg.org/ebooks/23182","title":"The Brigade Commander","author":"J. W. Deforest"}
+{"id":"2899","link":"http://www.gutenberg.org/ebooks/2899","title":"The Agrarian Crusade","author":"Solon J. Buck"}
+{"id":"1473","link":"http://www.gutenberg.org/ebooks/1473","title":"The Absentee","author":"Maria Edgeworth"}
+{"id":"1424","link":"http://www.gutenberg.org/ebooks/1424","title":"Castle Rackrent","author":"Maria Edgeworth"}
+{"id":"4325","link":"http://www.gutenberg.org/ebooks/4325","title":"The New Book Of Martyrs","author":"Georges Duhamel"}
+{"id":"6561","link":"http://www.gutenberg.org/ebooks/6561","title":"Our Friend John Burroughs","author":"Clara Barrus"}
+{"id":"41963","link":"http://www.gutenberg.org/ebooks/41963","title":"The Debatable Land","author":"Arthur Colton"}
+{"id":"4982","link":"http://www.gutenberg.org/ebooks/4982","title":"A Rock in the Baltic","author":"Robert Barr"}
+{"id":"6687","link":"http://www.gutenberg.org/ebooks/6687","title":"From the Caves and Jungles of Hindostan","author":"Helena Pretrovna Blavatsky"}
+{"id":"5713","link":"http://www.gutenberg.org/ebooks/5713","title":"Tales of War","author":"Lord Dunsany"}
+{"id":"2945","link":"http://www.gutenberg.org/ebooks/2945","title":"Essays, Second Series","author":"Ralph Waldo Emerson"}
+{"id":"4978","link":"http://www.gutenberg.org/ebooks/4978","title":"The March of Portola","author":"Zoeth S. Eldredge and E. J. Molera"}
+{"id":"560","link":"http://www.gutenberg.org/ebooks/560","title":"Mr. Standfast","author":"John Buchan"}
+{"id":"7785","link":"http://www.gutenberg.org/ebooks/7785","title":"Leonardo da Vinci","author":"Maurice W. Brockwell"}
+{"id":"3162","link":"http://www.gutenberg.org/ebooks/3162","title":"The Enchanted Typewriter","author":"John Kendrick Bangs"}
+{"id":"23220","link":"http://www.gutenberg.org/ebooks/23220","title":"The Gray Nun","author":"Nataly Von Eschstruth"}
+{"id":"5672","link":"http://www.gutenberg.org/ebooks/5672","title":"The Voice on the Wire","author":"Eustace Hale Ball"}
+{"id":"2685","link":"http://www.gutenberg.org/ebooks/2685","title":"The Way to Peace","author":"Margaret Deland"}
+{"id":"2509","link":"http://www.gutenberg.org/ebooks/2509","title":"The Lani People","author":"J. F. Bone"}
+{"id":"5826","link":"http://www.gutenberg.org/ebooks/5826","title":"The Diary and Letters of Madame D'Arblay, Vol. 1 (of 3)","author":"Fanny Burney"}
+{"id":"3334","link":"http://www.gutenberg.org/ebooks/3334","title":"Drake's Great Armada","author":"Walter Biggs"}
+{"id":"3419","link":"http://www.gutenberg.org/ebooks/3419","title":"Rebecca Mary","author":"Annie Hamilton Donnell"}
+{"id":"2513","link":"http://www.gutenberg.org/ebooks/2513","title":"God the Known and God the Unknown","author":"Samuel Butler"}
+{"id":"3305","link":"http://www.gutenberg.org/ebooks/3305","title":"Ballads of Peace in War","author":"Michael Earls"}
+{"id":"6458","link":"http://www.gutenberg.org/ebooks/6458","title":"Air Service Boys in the Big Battle","author":"Charles Amory Beach"}
+{"id":"41964","link":"http://www.gutenberg.org/ebooks/41964","title":"Mark Tidd, Editor","author":"Clarence Budington Kelland"}
+{"id":"4557","link":"http://www.gutenberg.org/ebooks/4557","title":"The Idea of Progress","author":"J. B. Bury"}
+{"id":"2813","link":"http://www.gutenberg.org/ebooks/2813","title":"The Grand Babylon Hotel","author":"Arnold Bennett"}
+{"id":"1634","link":"http://www.gutenberg.org/ebooks/1634","title":"The Foolish Virgin","author":"Thomas Dixon"}
+{"id":"5301","link":"http://www.gutenberg.org/ebooks/5301","title":"The Imperialist","author":"(a.k.a. Mrs. Everard Cotes) Sara Jeannette Duncan"}
+{"id":"4643","link":"http://www.gutenberg.org/ebooks/4643","title":"Vignettes Of San Francisco","author":"Almira Bailey"}
+{"id":"2504","link":"http://www.gutenberg.org/ebooks/2504","title":"Some Cities and San Francisco and Resurgam","author":"Hubert Howe Bancroft"}
+{"id":"7373","link":"http://www.gutenberg.org/ebooks/7373","title":"The Path to Rome","author":"Hilaire Belloc"}
+{"id":"5715","link":"http://www.gutenberg.org/ebooks/5715","title":"The Campaign of Chancellorsville","author":"Theodore A. Dodge"}
+{"id":"1840","link":"http://www.gutenberg.org/ebooks/1840","title":"The Financier","author":"Theodore Dreiser"}
+{"id":"5992","link":"http://www.gutenberg.org/ebooks/5992","title":"Station Amusements","author":"Lady Barker"}
+{"id":"6104","link":"http://www.gutenberg.org/ebooks/6104","title":"Station Life in New Zealand","author":"Lady Barker"}
+{"id":"2850","link":"http://www.gutenberg.org/ebooks/2850","title":"The Wars of the Jews or History of the Destruction of Jerusalem","author":"Flavius Josephus"}
+{"id":"43396","link":"http://www.gutenberg.org/ebooks/43396","title":"The Desert World","author":"Arthur Mangin"}
+{"id":"43395","link":"http://www.gutenberg.org/ebooks/43395","title":"The Washer of the Ford","author":"Fiona Macleod"}
+{"id":"43393","link":"http://www.gutenberg.org/ebooks/43393","title":"At the Councillor's","author":"E. Marlitt"}
+{"id":"45384","link":"http://www.gutenberg.org/ebooks/45384","title":"The Book of Fables and Folk Stories","author":"Horace E. Scudder"}
+{"id":"45439","link":"http://www.gutenberg.org/ebooks/45439","title":"Punch, or the London Charivari, Vol. 109, 16th November, 1895","author":"Various"}
+{"id":"33116","link":"http://www.gutenberg.org/ebooks/33116","title":"Harper's Round Table, August 27, 1895","author":"Various"}
+{"id":"45440","link":"http://www.gutenberg.org/ebooks/45440","title":"Note-book No. 1 of the Kickapoo Club","author":"Various"}
+{"id":"5026","link":"http://www.gutenberg.org/ebooks/5026","title":"State of the Union Addresses","author":"Ulysses S. Grant"}
+{"id":"5027","link":"http://www.gutenberg.org/ebooks/5027","title":"State of the Union Addresses","author":"Rutherford B. Hayes"}
+{"id":"5022","link":"http://www.gutenberg.org/ebooks/5022","title":"State of the Union Addresses","author":"Franklin Pierce"}
+{"id":"5021","link":"http://www.gutenberg.org/ebooks/5021","title":"State of the Union Addresses","author":"Millard Fillmore"}
+{"id":"5028","link":"http://www.gutenberg.org/ebooks/5028","title":"State of the Union Addresses","author":"Chester A. Arthur"}
+{"id":"5020","link":"http://www.gutenberg.org/ebooks/5020","title":"State of the Union Addresses of Zachary Taylor","author":"Zachary Taylor"}
+{"id":"5029","link":"http://www.gutenberg.org/ebooks/5029","title":"State of the Union Addresses","author":"Grover Cleveland"}
+{"id":"5023","link":"http://www.gutenberg.org/ebooks/5023","title":"State of the Union Addresses","author":"James Buchanan"}
+{"id":"5025","link":"http://www.gutenberg.org/ebooks/5025","title":"State of the Union Addresses","author":"Andrew Johnson"}

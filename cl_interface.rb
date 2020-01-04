@@ -1,5 +1,4 @@
-#!/Users/primer/.rvm/rubies/ruby-1.9.2-p318/bin/ruby
-require "./file_download.rb"
+require "./gutenberg_reader.rb"
 require "./book.rb"
 
 class LibreIpsumCLI
@@ -7,7 +6,6 @@ class LibreIpsumCLI
 
   def initialize
     @reader = GutenbergReader.new
-    @book = Book.new
   end
 
   def run
@@ -35,20 +33,24 @@ class LibreIpsumCLI
     @reader.get_latest_rss
     @reader.get_book_info
     @reader.process_books
+    
+    trim_books(__dir__ + '/books')
   end
 
-  def update_manifest dir
+  def update_manifest(dir)
     @reader.save_record(@reader.from_directory(dir))
   end
 
-  def trim_book dir
-    p dir
+  def trim_books(dir) 
     if File.exists?(dir) && File.directory?(dir)
       Dir.entries(dir).reject { |b| b[0] == "." }.each do |b|
-        @book.book = dir+'/'+b
+        book = Book.new
+        book.book = dir+'/'+b
+
         begin
-          @book.trim! unless BLACKLIST.include?(@book.book)
+          book.trim! unless BLACKLIST.include?(book.book)
         rescue
+          puts "Error trimming or reading book"
           p b
         end
       end

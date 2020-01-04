@@ -129,35 +129,9 @@
     </div>
   </footer>
   <script src="/javascripts/jquery.js"></script>
-  <script src="/javascripts/jquery-zclip-min.js"></script>
   <script src="/javascripts/chosen.jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-
-      function attachZClip(elem) {
-        elem.zclip({
-          path:'/javascripts/ZeroClipboard.swf',
-          copy: function() {
-            return $.trim($(this).siblings('blockquote').find("#book-content").text());
-          },
-          afterCopy: function() {
-            var $copyTextNode = $(this).find("#inner-copy");
-            var oldCopy = $copyTextNode.html();
-
-            $copyTextNode.text("copied!");
-
-            setTimeout(function() {
-              $copyTextNode.html(oldCopy);
-            }, 2000);
-          }
-        });
-
-        // // TODO: remove jquery and just use zeroclipboard? zclip isnt taking margins into account.
-        $('.zclip').css({
-          'top': +$('.zclip').css('top').replace(/px/, '') + +(elem.css('marginTop').replace(/px/,'') * 3)
-        });
-      }
-
       var book_id = 0,
           em = /\"?\_(\S(.*?\S)?)\_\"?/gm,
           parseNewLines = function(markdown) {
@@ -168,7 +142,39 @@
           },
           $select = $('select'),
           $paragraphs = $('#paragraphs');
+      var bookContentEl = document.getElementById('book-content')
+      var copyButton = document.getElementById('copy-to');
+      
+      function copyToClipboard() {
+        function copyContents(el) {
+          var range = document.createRange();
+          var selection = window.getSelection();
+          var input = document.createElement('input');
 
+          input.value = el.textContent;
+
+          document.body.appendChild(input);
+
+          input.select();
+
+          document.execCommand('copy');
+          document.body.removeChild(input);
+        }
+
+        var oldContentEditable = bookContentEl.contentEditable;
+        var oldReadOnly = bookContentEl.readOnly;
+    
+        try {
+          bookContentEl.contentEditable = 'true';  // specific to iOS
+          bookContentEl.readOnly = false;
+          copyContents(bookContentEl);
+        } finally {
+          bookContentEl.contentEditable = oldContentEditable;
+          bookContentEl.readOnly = oldReadOnly;
+        }
+      }
+
+      copyButton.addEventListener('click', copyToClipboard);
       $paragraphs.on('blur', function() {
         if(!this.value.match(/[0-9]/)) {
           $('#paragraph-count').text(1);
@@ -209,7 +215,6 @@
             if (isHidden('#copy-to')) {
               var $copy = $('#copy-to');
               $copy.removeClass('hide')
-              attachZClip($copy);
             }
 
             $("#book-title").text(res.title);

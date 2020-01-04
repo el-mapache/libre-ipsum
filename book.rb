@@ -112,7 +112,7 @@ class Book
   # the books title, and, if they exist, places them into a hash along
   # with the processed text to be sent back to the client.
 
-  def prepare_book_data(text,process)
+  def prepare_book_data(text, process)
     data = {}
     @file.each do |line|
       data[:title] = format_book_info(line) if line.match(/Title:/)
@@ -138,7 +138,7 @@ class Book
   # If the line is blank, starts with a space, a new line, or is supposed to be a picture,
   # it is most definitely not acceptable
   def valid_line?(line)
-    if line.nil? || line == "" || line == "\r\n" || line.match(/\[Illustration:/)
+    if line.nil? || line == "" || line == "\r\n" || line.match(/\[Illustration:/) || line.match(/Appendix/i)
       false
     else
       true

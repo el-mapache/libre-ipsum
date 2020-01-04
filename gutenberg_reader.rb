@@ -2,9 +2,11 @@
 require "open-uri"
 require "nokogiri"
 require "json"
+require "./book.rb"
 
 class GutenbergReader
   attr_accessor :books, :rss_file
+  attr_reader :existing_books
 
   def initialize
     @existing_books = Dir.entries("books").reject { |b| b[0] == "." }
@@ -13,6 +15,25 @@ class GutenbergReader
     @epub_link = "http://gutenberg.readingroo.ms/"
   end
   
+  def download_from_manifest
+    manifest = File.open("manifest.txt", 'a+')
+    book_records = manifest.each_line.map { |line| line }
+    
+    book_records.each do |record|
+      book = JSON.parse(record)
+      book_id = book['id']
+      filename = "#{book_id}.txt"
+
+      next if @existing_books.find { |b| /^#{filename}"/ =~ b }
+
+      link = build_link(@epub_link, id_to_fragment(book_id), book_id, filename)
+
+      download("books/"+filename, "w+", link)
+    end
+
+    manifest.close
+  end
+
   # Latest rss feed of new books
   def get_latest_rss
     @rss_file = download("gutenberg.rss",'w+', @rss_link)
@@ -41,7 +62,7 @@ class GutenbergReader
       link = build_link(@epub_link, id_to_fragment(book_id), book_id, filename)
       book if download("books/"+filename, "w+", link) != false
     end
-    
+
     save_record(downloaded.compact) 
   end
   
@@ -66,21 +87,34 @@ class GutenbergReader
   private 
 
   def download(filename, mode, remote_resource)
-    file = File.open(filename,mode)
+    p 'Starting download...'
     begin
       URI.parse(remote_resource).open do |resource|
-        resource.each_line do |line|
-          file.write(line)
-        end
-        file.close
+        p 'Resource found!'
+        book_2_txt_file(filename, mode, resource)
       end
     rescue Exception => e
+      puts 'Error getting resource:'
       puts e
       return false
     end
     filename
   end
   
+  def book_2_txt_file(filename, mode, resource)
+    file = File.open(filename, mode)
+
+    p 'Writing book to text file'
+
+    resource.each_line do |line|
+      file.write(line)
+    end
+
+    p 'Writing finished, closing'
+
+    file.close
+  end
+
   def build_link(*args)
     args.join('/')
   end
